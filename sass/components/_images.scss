@@ -1,0 +1,18 @@
+.images {
+
+}
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+
+  &__images {
+
+  }
+  &__kuva {
+    width: 55%;
+    height: 55%;
+  }
+}

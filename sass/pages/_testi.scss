@@ -1,4 +1,11 @@
-.section-about {
+
+
+
+
+
+
+
+.section-laatikko {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -6,8 +13,8 @@
   padding: 20rem 0;
   background-image: linear-gradient(
                   to right bottom,
-                  rgba(#a2609e, 0.8),
-                  rgba(#3f115b, 0.8)),
+                  rgba(#60a267, 0.8),
+                  rgba(#be2d9f, 0.8)),
   url(../../img/IMG_20200910_092605.jpg);
   background-size: cover;
 }
