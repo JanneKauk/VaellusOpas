@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+#htmlID {
+  font-size: 62.5%; //1rem = 10px;
+  @include responsive(tab-land) {
+    font-size: 56.25%;
+  }
+}
+
+
+body{
+  box-sizing: border-box;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+
+

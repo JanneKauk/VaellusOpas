@@ -1,0 +1,32 @@
+body {
+  font-family: "sans-serif";
+  font-weight: 350;
+  line-height: 1.5;
+
+}
+
+.heading-main {
+  color: #f8f8f8;
+  display: flex;
+  position: relative;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+
+  &--title {
+    display: inline-flex;
+    font-size: 10rem;
+    font-weight: 350;
+    letter-spacing: 4rem;
+
+    @media screen and (min-width: 360px) and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
+      font-size: 4rem;
+      letter-spacing: 3rem;
+    }
+    @media screen and (max-width: 360px) and (max-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+      font-size: 4rem;}
+    }
+
+  }
+
+

@@ -1,0 +1,46 @@
+.header {
+  height: 85vh;
+  background-image: linear-gradient(
+  to right,
+  rgba(187, 231, 178, 0.8),
+  rgba(#0b790b, 0.8)),
+  url("../../img/metsakko_small.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-bottom: 10rem;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+
+  }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+      to right,
+      rgba(187, 231, 178, 0.8),
+      rgba(#0b790b, 0.8)),
+      url("../../img/metsakko.jpg");
+  }
+
+  &__logo-container {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+  }
+
+  &__logo {
+    height: 3rem;
+  }
+
+  &__container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+}

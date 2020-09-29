@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+#htmlID {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column; }
+
+body {
+  font-family: "sans-serif";
+  font-weight: 350;
+  line-height: 1.5; }
+
+.heading-main {
+  color: #f8f8f8;
+  display: flex;
+  position: relative;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-main--title {
+    display: inline-flex;
+    font-size: 10rem;
+    font-weight: 350;
+    letter-spacing: 4rem; }
+    @media screen and (min-width: 360px) and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
+      .heading-main--title {
+        font-size: 4rem;
+        letter-spacing: 3rem; } }
+    @media screen and (max-width: 360px) and (max-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+      .heading-main--title {
+        font-size: 4rem; } }
+
+.buttons {
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+  color: white;
+  list-style: none;
+  font-size: 5rem; }
+  @media screen and (max-width: 670px) {
+    .buttons {
+      columns: 1;
+      -webkit-columns: 1;
+      -moz-columns: 1;
+      font-size: 1rem; } }
+  .buttons__button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .buttons__button:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+iframe {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  left: 0;
+  right: 0; }
+  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    iframe {
+      width: 95%;
+      height: 75%; } }
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    iframe {
+      width: 55%;
+      height: 40%; } }
+
+.info-box {
+  background-color: rgba(255, 255, 255, 0.82);
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+
+.header {
+  height: 85vh;
+  background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../../img/metsakko_small.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  margin-bottom: 10rem; }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%); } }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../../img/metsakko.jpg"); } }
+  .header__logo-container {
+    position: absolute;
+    top: 8%;
+    left: 5%; }
+  .header__logo {
+    height: 3rem; }
+  .header__container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 7rem;
+  padding-top: 5rem; }
+
+.footer {
+  background-color: #8a8888;
+  padding: 10rem 0; }
+
+.main {
+  height: 70vh;
+  position: relative; }
+  @media screen and (min-width: 650px) and (max-width: 1000px) {
+    .main {
+      height: 55vh; } }
+  @media screen and (min-width: 36rem) and (max-width: 65rem) and (-webkit-min-device-pixel-ratio: 1) {
+    .main {
+      height: 40vh; } }
+  @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
+    .main {
+      height: 30vh; } }
+  @media screen and (max-width: 55rem) and (max-height: 92rem) {
+    .main {
+      height: 100vh; } }
+
+.section-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #7bd078;
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(163, 238, 163, 0.8), rgba(9, 134, 9, 0.8)), url(../../img/IMG_20200910_092605.jpg);
+  background-size: cover; }
