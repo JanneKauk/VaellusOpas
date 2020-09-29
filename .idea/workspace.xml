@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd1245cb-1e12-4834-a399-2a1495df4f75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,23 +52,12 @@
       <workItem from="1600964192096" duration="7086000" />
       <workItem from="1600971475614" duration="16298000" />
       <workItem from="1601365770804" duration="153000" />
-      <workItem from="1601367603655" duration="466000" />
+      <workItem from="1601367049705" duration="1633000" />
     </task>
-    <task id="LOCAL−00001" summary="lockki">
-      <created>1601367856707</created>
-      <option name="number" value="LOCAL−00001" />
-      <option name="presentableId" value="LOCAL−00001" />
-      <updated>1601367856707</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lockki" />
-    <option name="LAST_COMMIT_MESSAGE" value="lockki" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600942151359">
