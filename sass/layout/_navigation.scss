@@ -1,7 +1,23 @@
 .nav {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-right: 7rem;
-  padding-top: 5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  list-style-type: none;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #ece7ff;
+  font-size: 30px;
+}
+
+.hamburger {
+  display: none;
 }
