@@ -1,4 +1,41 @@
-.section-about {
+
+.images {
+  height: 50vh;
+  position: relative;
+
+  @media screen and (min-width: 80rem) and (max-width: 100rem) {
+
+    height: 75vh;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 60rem) and (max-width: 80rem) {
+
+    height: 40vh;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 36rem) and (max-width: 65rem) and (-webkit-min-device-pixel-ratio: 1) {
+
+    height: 40vh;
+  }
+
+  @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
+
+    height: 30vh;
+  }
+
+  @media screen and (max-width: 55rem) and (max-height: 92rem) {
+    height: 90vh;
+  }
+
+}
+
+
+
+
+
+.section-laatikko {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -6,8 +43,8 @@
   padding: 20rem 0;
   background-image: linear-gradient(
                   to right bottom,
-                  rgba(#a2609e, 0.8),
-                  rgba(#3f115b, 0.8)),
+                  rgba(#60a267, 0.8),
+                  rgba(#be2d9f, 0.8)),
   url(../../img/IMG_20200910_092605.jpg);
   background-size: cover;
 }
