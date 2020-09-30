@@ -1,7 +1,7 @@
 
-.images {
+/*.images {
   height: 50vh;
-  position: relative;
+  //position: relative;
 
   @media screen and (min-width: 80rem) and (max-width: 100rem) {
 
@@ -29,7 +29,7 @@
     height: 90vh;
   }
 
-}
+}*/
 
 
 
@@ -37,14 +37,26 @@
 
 .section-laatikko {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  background-color: #7bd078;
+  align-items: center;
+  background-color: #f3f3f3;
   padding: 20rem 0;
-  background-image: linear-gradient(
+  height: 70vh;
+  :hover {
+    transform: scale(2);
+  }
+  /*background-image: linear-gradient(
                   to right bottom,
-                  rgba(#60a267, 0.8),
-                  rgba(#be2d9f, 0.8)),
+                  rgba(#ffffff, 0.8),
+                  rgba(#f5f5f5, 0.8)),
   url(../../img/IMG_20200910_092605.jpg);
-  background-size: cover;
+  background-size: cover;*/
+
+  @media screen and (max-width: 60rem) {
+    height: 65vh;
+  }
+  @media screen and (max-height: 80rem) {
+    height: 80vh;
+  }
 }

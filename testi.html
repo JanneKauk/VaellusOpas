@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/index.js"></script>
 </head>
 
 <body>
 <header class="header">
-    <div class="header__logo-container">
-        <img src="img/logo.png" alt="" style="width: 50px; height: 50px">
-    </div>
     <nav class="nav">
+        <div class="header__logo-container">
+            <img src="img/logo.png" alt="" style="width: 50px; height: 50px">
+        </div>
         <ul class="buttons">
-            <li class="buttons__button btn1"><a href="index.html">testi1</a></li>
-            <li class="buttons__button btn2"><a href="#">testi2</a></li>
-            <li class="buttons__button btn3"><a href="#">testi3</a></li>
-            <li class="buttons__button btn4"><a href="#">testi4</a></li>
+            <li class="buttons__button btn1"><a href="index.html">Etusivu</a></li>
+            <li class="buttons__button btn2"><a href="reitit.html">reitit</a></li>
+            <li class="buttons__button btn3"><a href="#">varusteet</a></li>
         </ul>
     </nav>
     <div class="header__container">
         <h1 class="heading-main">
-            <span class="heading-main--title">Otsikko</span>
+            <span class="heading-main--title">Ohjeet</span>
         </h1>
     </div>
 
@@ -29,9 +29,7 @@
 
 <main class="images">
     <article class="image-box">
-        <figure class="image-box__images">
-            <img class="image-box__kuva" src="img/metsakko.jpg" alt="testikuva1">
-            <img class="image-box__kuva" src="img/metsakko.jpg" alt="testikuva2">
+        <figure class="">
         </figure>
     </article>
 </main>
@@ -43,15 +41,31 @@
                 Lorem ipsum2222
             </p>
         </div>
+        <div class="info-box">
+            <h2 class="info-box__heading">testi</h2>
+            <p class="info-box__text">
+                Lorem ipsum2222
+            </p>
+        </div>
+        <div class="info-box">
+            <h2 class="info-box__heading">testi</h2>
+            <p class="info-box__text">
+                Lorem ipsum2222
+            </p>
+        </div>
 
     </section>
 </aside>
 <footer class="footer">
     <div class="footer_container">
-        <p>Footer teksti</p>
-        <figure class="footer__logo">
-            <img src="" alt="">
+        <p class="footer-text">Footer teksti</p>
+        <div class="image-box">
+        <figure class="image-box__images">
+            <img class="image-box__kuva" src="img/metsakko.jpg" alt="testikuva1">
+            <img class="image-box__kuva" src="img/metsakko.jpg" alt="testikuva2">
+            <img class="image-box__kuva" src="img/metsakko.jpg" alt="testikuva3">
         </figure>
+        </div>
     </div>
 
 </footer>

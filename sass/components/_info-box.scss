@@ -1,9 +1,25 @@
 .info-box {
   background-color: rgba(white, 0.82);
-  padding: 2.5rem;
+  padding: 4.5rem;
+  margin: 2rem;
+  //max-height: 18rem;
+  //min-height: 18rem;
+  width: 20rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.2rem 4rem rgba(black, .15);
   transition: transform .3s;
+  background-image: linear-gradient(
+                  to right bottom,
+                  rgba(#6692b1, 0.8),
+                  rgba(#628fb1, 0.8)),
+  url(../../img/IMG_20200910_092605.jpg);
+  background-size: cover;
+
+
+  &__text {
+    color: white;
+  }
+
 
 }

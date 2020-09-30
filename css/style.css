@@ -14,6 +14,16 @@ body {
   display: flex;
   flex-direction: column; }
 
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-12rem); }
+  80% {
+    transform: translateX(1.5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 body {
   font-family: "sans-serif";
   font-weight: 350;
@@ -29,7 +39,10 @@ body {
     display: inline-flex;
     font-size: 10rem;
     font-weight: 350;
-    letter-spacing: 4rem; }
+    letter-spacing: 4rem;
+    animation-name: moveRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
     @media screen and (min-width: 360px) and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
       .heading-main--title {
         font-size: 4rem;
@@ -37,30 +50,6 @@ body {
     @media screen and (max-width: 360px) and (max-height: 640px) and (-webkit-device-pixel-ratio: 2) {
       .heading-main--title {
         font-size: 4rem; } }
-
-.buttons {
-  columns: 4;
-  -webkit-columns: 4;
-  -moz-columns: 4;
-  color: white;
-  list-style: none;
-  font-size: 5rem; }
-  @media screen and (max-width: 670px) {
-    .buttons {
-      columns: 1;
-      -webkit-columns: 1;
-      -moz-columns: 1;
-      font-size: 1rem; } }
-  .buttons__button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-    .buttons__button:hover::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0; }
-
-a {
-  color: inherit;
-  text-decoration: none; }
 
 iframe {
   display: flex;
@@ -83,15 +72,45 @@ iframe {
 
 .info-box {
   background-color: rgba(255, 255, 255, 0.82);
-  padding: 2.5rem;
+  padding: 4.5rem;
+  margin: 2rem;
+  width: 20rem;
   text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+  background-image: linear-gradient(to right bottom, rgba(102, 146, 177, 0.8), rgba(98, 143, 177, 0.8)), url(../../img/IMG_20200910_092605.jpg);
+  background-size: cover; }
+  .info-box__text {
+    color: white; }
+
+.image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row nowrap;
+  align-content: flex-end; }
+  .image-box__kuva {
+    width: 40rem;
+    height: 30rem;
+    margin: 2rem;
+    margin-bottom: 4rem; }
+
+.reitti-kuva {
+  background-color: rgba(255, 255, 255, 0.82);
+  margin: 1px;
+  width: 25%;
+  height: auto;
+  float: left;
   border-radius: 3px;
   box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
 
 .header {
-  height: 85vh;
-  background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../../img/metsakko_small.jpg");
+  height: 65vh;
+  background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko_small.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -102,13 +121,7 @@ iframe {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%); } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../../img/metsakko.jpg"); } }
-  .header__logo-container {
-    position: absolute;
-    top: 8%;
-    left: 5%; }
-  .header__logo {
-    height: 3rem; }
+      background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko.jpg"); } }
   .header__container {
     position: absolute;
     top: 40%;
@@ -118,14 +131,68 @@ iframe {
 
 .nav {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-right: 7rem;
-  padding-top: 5rem; }
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh; }
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  list-style-type: none; }
+
+.buttons a {
+  text-decoration: none;
+  color: #ece7ff;
+  font-size: 30px; }
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ece7ff;
+  margin: 5px; }
+
+.hamburger {
+  display: none; }
+
+@media screen and (max-width: 700px) {
+  .buttons {
+    width: 70%; } }
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden; }
+  .buttons {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #0b790b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in; }
+  .buttons {
+    opacity: 0; }
+  .hamburger {
+    display: block;
+    margin: 10px;
+    position: absolute;
+    right: 0; } }
+
+.nav-active {
+  transform: translateX(0%); }
 
 .footer {
-  background-color: #8a8888;
+  background-color: #20221d;
   padding: 10rem 0; }
+
+.footer-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #f1e8e8; }
 
 .main {
   height: 70vh;
@@ -151,3 +218,88 @@ iframe {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(163, 238, 163, 0.8), rgba(9, 134, 9, 0.8)), url(../../img/IMG_20200910_092605.jpg);
   background-size: cover; }
+
+.main {
+  display: flex;
+  height: 70vh;
+  position: relative;
+  justify-content: center; }
+  @media screen and (min-width: 650px) and (max-width: 1000px) {
+    .main {
+      height: 55vh; } }
+  @media screen and (min-width: 36rem) and (max-width: 65rem) and (-webkit-min-device-pixel-ratio: 1) {
+    .main {
+      height: 40vh; } }
+  @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
+    .main {
+      height: 30vh; } }
+  @media screen and (max-width: 55rem) and (max-height: 92rem) {
+    .main {
+      height: 100vh; } }
+
+.main div {
+  width: 70%; }
+
+.main div article {
+  padding: 3rem; }
+
+.section-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #7bd078;
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(163, 238, 163, 0.8), rgba(9, 134, 9, 0.8)), url(../../img/IMG_20200910_092605.jpg);
+  background-size: cover; }
+
+/*.images {
+  height: 50vh;
+  //position: relative;
+
+  @media screen and (min-width: 80rem) and (max-width: 100rem) {
+
+    height: 75vh;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 60rem) and (max-width: 80rem) {
+
+    height: 40vh;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 36rem) and (max-width: 65rem) and (-webkit-min-device-pixel-ratio: 1) {
+
+    height: 40vh;
+  }
+
+  @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
+
+    height: 30vh;
+  }
+
+  @media screen and (max-width: 55rem) and (max-height: 92rem) {
+    height: 90vh;
+  }
+
+}*/
+.section-laatikko {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 20rem 0;
+  height: 70vh;
+  /*background-image: linear-gradient(
+                  to right bottom,
+                  rgba(#ffffff, 0.8),
+                  rgba(#f5f5f5, 0.8)),
+  url(../../img/IMG_20200910_092605.jpg);
+  background-size: cover;*/ }
+  @media screen and (max-width: 60rem) {
+    .section-laatikko {
+      height: 65vh; } }
+  @media screen and (max-height: 80rem) {
+    .section-laatikko {
+      height: 80vh; } }

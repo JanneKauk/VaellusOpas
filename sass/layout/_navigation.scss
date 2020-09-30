@@ -1,7 +1,69 @@
 .nav {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-right: 7rem;
-  padding-top: 5rem;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
 }
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  list-style-type: none;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #ece7ff;
+  font-size: 30px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ece7ff;
+  margin: 5px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .buttons {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .buttons {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #0b790b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .buttons {
+    opacity: 0;
+  }
+
+  .hamburger {
+    display: block;
+    margin: 10px;
+    position: absolute;
+    right: 0;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+
