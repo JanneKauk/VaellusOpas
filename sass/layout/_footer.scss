@@ -1,4 +1,11 @@
 .footer {
-  background-color: $footer-grey;
+  background-color: $footer-color;
   padding: 10rem 0;
+
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 2rem;
+  color: $footer-font-color;
 }
