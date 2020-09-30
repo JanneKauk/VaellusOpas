@@ -19,6 +19,10 @@ body {
     font-weight: 350;
     letter-spacing: 4rem;
 
+    animation-name: moveRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
     @media screen and (min-width: 360px) and (max-width: 650px) and (-webkit-min-device-pixel-ratio: 1) {
       font-size: 4rem;
       letter-spacing: 3rem;
