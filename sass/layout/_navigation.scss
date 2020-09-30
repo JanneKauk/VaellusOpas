@@ -20,7 +20,7 @@
 }
 
 .hamburger div {
-  width: 15px;
+  width: 25px;
   height: 3px;
   background-color: #ece7ff;
   margin: 5px;
@@ -30,39 +30,40 @@
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .buttons {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 600px) {
-    body {
-      overflow-x: hidden;
-    }
-    .buttons {
-      position: absolute;
-      right: 0px;
-      height: 92vh;
-      top: 8vh;
-      background-color: #0b790b;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transform: translateX(100%);
-    }
+  body {
+    overflow-x: hidden;
+  }
+  .buttons {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #0b790b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
   .buttons {
     opacity: 0;
   }
 
-  .header__logo-container {
-    display: block;
-  }
-
   .hamburger {
     display: block;
+    margin: 10px;
     position: absolute;
     right: 0;
   }
+}
+.nav-active {
+  transform: translateX(0%);
 }
 
