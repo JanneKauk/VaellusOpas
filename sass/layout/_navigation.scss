@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  min-height: 8vh;
 }
 
 .buttons {
@@ -18,6 +19,50 @@
   font-size: 30px;
 }
 
+.hamburger div {
+  width: 15px;
+  height: 3px;
+  background-color: #ece7ff;
+  margin: 5px;
+}
+
 .hamburger {
   display: none;
 }
+
+@media screen and (max-width: 800px) {
+  .buttons {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      overflow-x: hidden;
+    }
+    .buttons {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #0b790b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(100%);
+    }
+  .buttons {
+    opacity: 0;
+  }
+
+  .header__logo-container {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+}
+
