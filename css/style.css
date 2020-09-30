@@ -72,11 +72,17 @@ iframe {
 
 .info-box {
   background-color: rgba(255, 255, 255, 0.82);
-  padding: 2.5rem;
+  padding: 4.5rem;
+  margin: 2rem;
+  width: 20rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
-  transition: transform .3s; }
+  transition: transform .3s;
+  background-image: linear-gradient(to right bottom, rgba(102, 146, 177, 0.8), rgba(98, 143, 177, 0.8)), url(../../img/IMG_20200910_092605.jpg);
+  background-size: cover; }
+  .info-box__text {
+    color: white; }
 
 .image-box {
   display: flex;
@@ -91,6 +97,16 @@ iframe {
     height: 30rem;
     margin: 2rem;
     margin-bottom: 4rem; }
+
+.reitti-kuva {
+  background-color: rgba(255, 255, 255, 0.82);
+  margin: 1px;
+  width: 25%;
+  height: auto;
+  float: left;
+  border-radius: 3px;
+  box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
 
 .header {
   height: 65vh;
@@ -203,6 +219,39 @@ iframe {
   background-image: linear-gradient(to right bottom, rgba(163, 238, 163, 0.8), rgba(9, 134, 9, 0.8)), url(../../img/IMG_20200910_092605.jpg);
   background-size: cover; }
 
+.main {
+  display: flex;
+  height: 70vh;
+  position: relative;
+  justify-content: center; }
+  @media screen and (min-width: 650px) and (max-width: 1000px) {
+    .main {
+      height: 55vh; } }
+  @media screen and (min-width: 36rem) and (max-width: 65rem) and (-webkit-min-device-pixel-ratio: 1) {
+    .main {
+      height: 40vh; } }
+  @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
+    .main {
+      height: 30vh; } }
+  @media screen and (max-width: 55rem) and (max-height: 92rem) {
+    .main {
+      height: 100vh; } }
+
+.main div {
+  width: 70%; }
+
+.main div article {
+  padding: 3rem; }
+
+.section-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #7bd078;
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(163, 238, 163, 0.8), rgba(9, 134, 9, 0.8)), url(../../img/IMG_20200910_092605.jpg);
+  background-size: cover; }
+
 /*.images {
   height: 50vh;
   //position: relative;
@@ -236,9 +285,21 @@ iframe {
 }*/
 .section-laatikko {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  background-color: #7bd078;
+  align-items: center;
+  background-color: #f3f3f3;
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(96, 162, 103, 0.8), rgba(190, 45, 159, 0.8)), url(../../img/IMG_20200910_092605.jpg);
-  background-size: cover; }
+  height: 70vh;
+  /*background-image: linear-gradient(
+                  to right bottom,
+                  rgba(#ffffff, 0.8),
+                  rgba(#f5f5f5, 0.8)),
+  url(../../img/IMG_20200910_092605.jpg);
+  background-size: cover;*/ }
+  @media screen and (max-width: 60rem) {
+    .section-laatikko {
+      height: 65vh; } }
+  @media screen and (max-height: 80rem) {
+    .section-laatikko {
+      height: 80vh; } }
