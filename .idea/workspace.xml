@@ -23,13 +23,63 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/components/_button.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/.csscomb.dist.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/hamburgers.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_3dx-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_3dx.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_3dxy-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_3dxy.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_3dy-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_3dy.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_arrow-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_arrow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_arrowalt-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_arrowalt.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_arrowturn-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_arrowturn.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_boring.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_collapse-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_collapse.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_elastic-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_elastic.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_emphatic-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_emphatic.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_minus.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_slider-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_spin-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_spin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_spring-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_spring.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_squeeze.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_stand-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_stand.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_vortex-r.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/_sass/hamburgers/types/_vortex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/bs-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/config.postcss.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/dist/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/dist/hamburgers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/dist/hamburgers.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/eyeglass-exports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/hamburgers.gemspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/lib/hamburgers.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/lib/hamburgers/version.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/hamburgers-master/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_navigation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testi.html" beforeDir="false" afterPath="$PROJECT_DIR$/testi.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,8 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.scss" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="npm.scss" />
       </list>
     </recent_temporary>
   </component>
@@ -108,8 +158,15 @@
       <workItem from="1600971475614" duration="16298000" />
       <workItem from="1601365770804" duration="153000" />
       <workItem from="1601367049705" duration="1633000" />
-      <workItem from="1601446753063" duration="6099000" />
+      <workItem from="1601446753063" duration="14511000" />
     </task>
+    <task id="LOCAL−00001" summary="Navbar muokattu ja lisätty hamburger">
+      <created>1601454024142</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1601454024142</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +186,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Nappulat flexboksissa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nappulat flexboksissa" />
+    <MESSAGE value="Navbar muokattu ja lisätty hamburger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navbar muokattu ja lisätty hamburger" />
   </component>
   <component name="WindowStateProjectService">
     <state x="369" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601448627478">
@@ -141,6 +199,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1600979742482" />
+    <state x="0" y="25" key="CommitChangelistDialog2" timestamp="1601454022290">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="0" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601454022290" />
     <state x="1109" y="322" width="662" height="640" key="EditFileWatcherDialog" timestamp="1600942100858">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -150,97 +212,98 @@
     </state>
     <state x="1220" y="299" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1600964199949" />
     <state x="1220" y="299" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1600942088144" />
-    <state width="693" height="259" key="GridCell.Tab.0.bottom" timestamp="1601451666340">
+    <state width="697" height="286" key="GridCell.Tab.0.bottom" timestamp="1601462752147">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="693" height="259" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601451666340" />
+    <state width="697" height="286" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601462752147" />
     <state width="1899" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1601374463615" />
-    <state width="597" height="304" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601448638190" />
-    <state width="693" height="259" key="GridCell.Tab.0.center" timestamp="1601451666338">
+    <state width="1419" height="286" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601462730485" />
+    <state width="697" height="286" key="GridCell.Tab.0.center" timestamp="1601462752146">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="693" height="259" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601451666338" />
+    <state width="697" height="286" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601462752146" />
     <state width="1899" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1601374463615" />
-    <state width="597" height="304" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1601448638185" />
-    <state width="693" height="259" key="GridCell.Tab.0.left" timestamp="1601451666337">
+    <state width="1419" height="286" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1601462730483" />
+    <state width="697" height="286" key="GridCell.Tab.0.left" timestamp="1601462752145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="693" height="259" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601451666337" />
+    <state width="697" height="286" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601462752145" />
     <state width="1899" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1601374463615" />
-    <state width="597" height="304" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1601448638184" />
-    <state width="693" height="259" key="GridCell.Tab.0.right" timestamp="1601451666339">
+    <state width="1419" height="286" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1601462730481" />
+    <state width="697" height="286" key="GridCell.Tab.0.right" timestamp="1601462752147">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="693" height="259" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601451666339" />
+    <state width="697" height="286" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601462752147" />
     <state width="1899" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1601374463615" />
-    <state width="597" height="304" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1601448638188" />
-    <state width="713" height="304" key="GridCell.Tab.1.bottom" timestamp="1601450461058">
+    <state width="1419" height="286" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1601462730484" />
+    <state width="697" height="286" key="GridCell.Tab.1.bottom" timestamp="1601462752150">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601450461058" />
-    <state width="1343" height="286" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601447140955" />
-    <state width="713" height="304" key="GridCell.Tab.1.center" timestamp="1601450461057">
+    <state width="697" height="286" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601462752150" />
+    <state width="697" height="304" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601462562595" />
+    <state width="697" height="286" key="GridCell.Tab.1.center" timestamp="1601462752149">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1601450461057" />
-    <state width="1343" height="286" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1601447140951" />
-    <state width="713" height="304" key="GridCell.Tab.1.left" timestamp="1601450461056">
+    <state width="697" height="286" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1601462752149" />
+    <state width="697" height="304" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1601462562594" />
+    <state width="697" height="286" key="GridCell.Tab.1.left" timestamp="1601462752148">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1601450461056" />
-    <state width="1343" height="286" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1601447140951" />
-    <state width="713" height="304" key="GridCell.Tab.1.right" timestamp="1601450461058">
+    <state width="697" height="286" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1601462752148" />
+    <state width="697" height="304" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1601462562592" />
+    <state width="697" height="286" key="GridCell.Tab.1.right" timestamp="1601462752149">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1601450461058" />
-    <state width="1343" height="286" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1601447140952" />
-    <state width="713" height="304" key="GridCell.Tab.2.bottom" timestamp="1601450461064">
+    <state width="697" height="286" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1601462752149" />
+    <state width="697" height="304" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1601462562594" />
+    <state width="697" height="286" key="GridCell.Tab.2.bottom" timestamp="1601462752153">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601450461064" />
-    <state width="1343" height="286" key="GridCell.Tab.2.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601447140964" />
-    <state width="713" height="304" key="GridCell.Tab.2.center" timestamp="1601450461062">
+    <state width="697" height="286" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601462752153" />
+    <state width="697" height="304" key="GridCell.Tab.2.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601462562597" />
+    <state width="697" height="286" key="GridCell.Tab.2.center" timestamp="1601462752151">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1601450461062" />
-    <state width="1343" height="286" key="GridCell.Tab.2.center/0.23.1440.877@0.23.1440.877" timestamp="1601447140958" />
-    <state width="713" height="304" key="GridCell.Tab.2.left" timestamp="1601450461061">
+    <state width="697" height="286" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1601462752151" />
+    <state width="697" height="304" key="GridCell.Tab.2.center/0.23.1440.877@0.23.1440.877" timestamp="1601462562596" />
+    <state width="697" height="286" key="GridCell.Tab.2.left" timestamp="1601462752151">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1601450461061" />
-    <state width="1343" height="286" key="GridCell.Tab.2.left/0.23.1440.877@0.23.1440.877" timestamp="1601447140957" />
-    <state width="713" height="304" key="GridCell.Tab.2.right" timestamp="1601450461063">
+    <state width="697" height="286" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1601462752151" />
+    <state width="697" height="304" key="GridCell.Tab.2.left/0.23.1440.877@0.23.1440.877" timestamp="1601462562596" />
+    <state width="697" height="286" key="GridCell.Tab.2.right" timestamp="1601462752152">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1601450461063" />
-    <state width="1343" height="286" key="GridCell.Tab.2.right/0.23.1440.877@0.23.1440.877" timestamp="1601447140963" />
-    <state width="713" height="304" key="GridCell.Tab.3.bottom" timestamp="1601450461066">
+    <state width="697" height="286" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1601462752152" />
+    <state width="697" height="304" key="GridCell.Tab.2.right/0.23.1440.877@0.23.1440.877" timestamp="1601462562597" />
+    <state width="697" height="286" key="GridCell.Tab.3.bottom" timestamp="1601462752158">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601450461066" />
-    <state width="1343" height="286" key="GridCell.Tab.3.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601447140967" />
-    <state width="713" height="304" key="GridCell.Tab.3.center" timestamp="1601450461065">
+    <state width="697" height="286" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601462752158" />
+    <state width="697" height="304" key="GridCell.Tab.3.bottom/0.23.1440.877@0.23.1440.877" timestamp="1601462562599" />
+    <state width="697" height="286" key="GridCell.Tab.3.center" timestamp="1601462752155">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1601450461065" />
-    <state width="1343" height="286" key="GridCell.Tab.3.center/0.23.1440.877@0.23.1440.877" timestamp="1601447140966" />
-    <state width="713" height="304" key="GridCell.Tab.3.left" timestamp="1601450461064">
+    <state width="697" height="286" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1601462752155" />
+    <state width="697" height="304" key="GridCell.Tab.3.center/0.23.1440.877@0.23.1440.877" timestamp="1601462562598" />
+    <state width="697" height="286" key="GridCell.Tab.3.left" timestamp="1601462752153">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1601450461064" />
-    <state width="1343" height="286" key="GridCell.Tab.3.left/0.23.1440.877@0.23.1440.877" timestamp="1601447140965" />
-    <state width="713" height="304" key="GridCell.Tab.3.right" timestamp="1601450461066">
+    <state width="697" height="286" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1601462752153" />
+    <state width="697" height="304" key="GridCell.Tab.3.left/0.23.1440.877@0.23.1440.877" timestamp="1601462562597" />
+    <state width="697" height="286" key="GridCell.Tab.3.right" timestamp="1601462752157">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="713" height="304" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1601450461066" />
-    <state width="1343" height="286" key="GridCell.Tab.3.right/0.23.1440.877@0.23.1440.877" timestamp="1601447140966" />
+    <state width="697" height="286" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1601462752157" />
+    <state width="697" height="304" key="GridCell.Tab.3.right/0.23.1440.877@0.23.1440.877" timestamp="1601462562598" />
     <state x="0" y="58" width="900" height="722" key="SettingsEditor" timestamp="1601448399760">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="58" width="900" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601448399760" />
-    <state x="282" y="201" key="Vcs.Push.Dialog.v2" timestamp="1601377040602">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="282" y="183" key="Vcs.Push.Dialog.v2" timestamp="1601454028286">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="282" y="183" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601454028286" />
     <state x="282" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1601377040602" />
     <state x="480" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601377006515">
       <screen x="0" y="23" width="1440" height="877" />
