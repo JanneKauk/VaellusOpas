@@ -1,0 +1,33 @@
+.reitti-box{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: medium;
+  padding: 3rem;
+
+
+  &__reitti-kuva{
+    background-color: rgba(white, 0.82);
+    margin-top: 0.7rem;
+    margin-right: 3rem;
+    width: 15%;
+    height: auto;
+    //max-height: 18rem;
+    //min-height: 18rem;
+    border-radius: 3px;
+    box-shadow: 0 1.2rem 4rem rgba(black, .15);
+    transition: transform .3s;
+
+    @media screen and (min-width: 650px) and (max-width: 1000px) {
+      width: 30%;
+    }
+    @media screen and (min-width: 26rem) and (max-width: 65rem) and (-webkit-min-device-pixel-ratio: 1) {
+      width: 30%;
+    }
+    @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
+      width: 30%;
+    }
+    @media screen and (max-width: 55rem) and (max-height: 92rem) {
+      width: 30%;
+    }
+  }
+}

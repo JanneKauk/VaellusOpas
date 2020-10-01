@@ -1,5 +1,7 @@
 .header {
   height: 65vh;
+  max-height: 580px;
+
   background-image: linear-gradient(
   to right,
   rgba(187, 231, 178, 0.8),
@@ -13,8 +15,8 @@
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
-
   }
+
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
   only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
   only screen and (min-width: 125em) {
