@@ -1,24 +1,42 @@
 
 .images {
-  
+
 }
 .image-box {
   display: flex;
+
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+
   flex-wrap: wrap;
   flex-flow: row nowrap;
   align-content: flex-end;
 
 
+  @media screen and (max-width: 90rem) {
+    flex-flow: column nowrap;
+  }
+  &__caption {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
 
+  }
+
+
+  &__images {
+    /*@media screen and (max-width: 90rem) {
+
+    }*/
+  }
 
   &__kuva {
+    transform: scale(0.7);
     width: 40rem;
     height: 30rem;
     margin: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 
   }
 }

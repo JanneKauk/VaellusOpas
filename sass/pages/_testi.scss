@@ -1,62 +1,61 @@
 
-/*.images {
-  height: 50vh;
-  //position: relative;
-
-  @media screen and (min-width: 80rem) and (max-width: 100rem) {
-
-    height: 75vh;
-    flex-direction: row;
-  }
-
-  @media screen and (min-width: 60rem) and (max-width: 80rem) {
-
-    height: 40vh;
-    flex-direction: row;
-  }
-
-  @media screen and (min-width: 36rem) and (max-width: 65rem) and (-webkit-min-device-pixel-ratio: 1) {
-
-    height: 40vh;
-  }
-
-  @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
-
-    height: 30vh;
-  }
-
-  @media screen and (max-width: 55rem) and (max-height: 92rem) {
-    height: 90vh;
-  }
-
-}*/
-
-
 
 
 
 .section-laatikko {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #f3f3f3;
   padding: 20rem 0;
   height: 70vh;
   :hover {
-    transform: scale(2);
+    //transform: scale(1.2);
   }
-  /*background-image: linear-gradient(
-                  to right bottom,
-                  rgba(#ffffff, 0.8),
-                  rgba(#f5f5f5, 0.8)),
-  url(../../img/IMG_20200910_092605.jpg);
-  background-size: cover;*/
 
   @media screen and (max-width: 60rem) {
     height: 65vh;
   }
   @media screen and (max-height: 80rem) {
     height: 80vh;
+
+  }
+
+}
+
+.ohje-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(white, 0.82);
+  padding: 4.5rem;
+  margin: 2rem;
+  //max-height: 18rem;
+  min-height: 25rem;
+  width: 60rem;
+  height: 60rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.2rem 4rem rgba(black, .15);
+  overflow: scroll;
+
+
+
+  &__heading {
+    width: 100%;
+    font-size: 3rem;
+  }
+  &__imgtext {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  &__text {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  &__img {
+
   }
 }

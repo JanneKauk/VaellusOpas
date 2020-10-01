@@ -1,11 +1,13 @@
 .footer {
   background-color: $footer-color;
   padding: 10rem 0;
+  overflow: hidden;
 
 }
 
 .footer-text {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   color: $footer-font-color;
 }
+
