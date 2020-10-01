@@ -1,0 +1,37 @@
+[
+    {
+      "Route": "Korpinkierros",
+      "img": "img/kartta_placeholder.PNG",
+      "Difficulty": "Helppo",
+      "Location": "Nuuksio",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam leo, cursus ac gravida bibendum, consectetur sed sapien. Morbi varius massa vitae eleifend efficitur. Donec maximus lorem molestie venenatis cursus. Etiam gravida, elit et luctus sollicitudin, felis mauris aliquet nisl, vel faucibus urna quam sit amet lacus. Nullam vulputate diam id placerat ullamcorper. Aenean ut interdum ante, nec tincidunt ligula. Aliquam rhoncus lacus scelerisque, viverra mi vehicula, maximus tortor."
+    },
+    {
+      "Route": "Karhunkierros",
+      "img": "img/kartta_placeholder.PNG",
+      "Difficulty": "Keskivaikea",
+      "Location": "Lappi",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam leo, cursus ac gravida bibendum, consectetur sed sapien. Morbi varius massa vitae eleifend efficitur. Donec maximus lorem molestie venenatis cursus. Etiam gravida, elit et luctus sollicitudin, felis mauris aliquet nisl, vel faucibus urna quam sit amet lacus. Nullam vulputate diam id placerat ullamcorper. Aenean ut interdum ante, nec tincidunt ligula. Aliquam rhoncus lacus scelerisque, viverra mi vehicula, maximus tortor."
+    },
+    {
+      "Route": "Kotkankierros",
+      "img": "img/kartta_placeholder.PNG",
+      "Difficulty": "Vaikea",
+      "Location": "Suomi",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam leo, cursus ac gravida bibendum, consectetur sed sapien. Morbi varius massa vitae eleifend efficitur. Donec maximus lorem molestie venenatis cursus. Etiam gravida, elit et luctus sollicitudin, felis mauris aliquet nisl, vel faucibus urna quam sit amet lacus. Nullam vulputate diam id placerat ullamcorper. Aenean ut interdum ante, nec tincidunt ligula. Aliquam rhoncus lacus scelerisque, viverra mi vehicula, maximus tortor."
+    },
+    {
+      "Route": "Kalankierros",
+      "img": "img/kartta_placeholder.PNG",
+      "Difficulty": "Helppo",
+      "Location": "Nuuksio",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam leo, cursus ac gravida bibendum, consectetur sed sapien. Morbi varius massa vitae eleifend efficitur. Donec maximus lorem molestie venenatis cursus. Etiam gravida, elit et luctus sollicitudin, felis mauris aliquet nisl, vel faucibus urna quam sit amet lacus. Nullam vulputate diam id placerat ullamcorper. Aenean ut interdum ante, nec tincidunt ligula. Aliquam rhoncus lacus scelerisque, viverra mi vehicula, maximus tortor."
+    },
+    {
+      "Route": "Kauriinkierros",
+      "img": "img/kartta_placeholder.PNG",
+      "Difficulty": "Keskivaikea",
+      "Location": "Kuopio",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla diam leo, cursus ac gravida bibendum, consectetur sed sapien. Morbi varius massa vitae eleifend efficitur. Donec maximus lorem molestie venenatis cursus. Etiam gravida, elit et luctus sollicitudin, felis mauris aliquet nisl, vel faucibus urna quam sit amet lacus. Nullam vulputate diam id placerat ullamcorper. Aenean ut interdum ante, nec tincidunt ligula. Aliquam rhoncus lacus scelerisque, viverra mi vehicula, maximus tortor."
+    }
+]
