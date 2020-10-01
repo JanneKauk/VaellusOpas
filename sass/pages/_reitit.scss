@@ -27,17 +27,27 @@ body{
   @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
     width: 100%;
   }
+
+  h2 {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 80%;
+  }
+  span {
+    width: 80%;
+  }
 }
 
-.main div h2{
+/*.main div h2{
   width: 100%;
   margin-bottom: 2rem;
   font-size: 3rem;
   line-height: 80%;
-}
-.main span{
+}*/
+/*.main span{
   width: 80%;
-}
+}*/
 
 .section-about {
   display: flex;
