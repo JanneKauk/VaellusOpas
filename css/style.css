@@ -146,6 +146,22 @@ iframe {
       .reitti-box__reitti-kuva {
         width: 30%; } }
 
+.map-container {
+  display: flex;
+  height: 70vh; }
+
+#map {
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  /*@media screen and (max-width: 600px) {
+    height: 60%;width:75%;
+  }*/ }
+
 .header {
   height: 65vh;
   max-height: 580px;
