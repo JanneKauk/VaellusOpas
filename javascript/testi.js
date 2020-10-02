@@ -1,10 +1,10 @@
-const burger2 = document.querySelector(".hamburger");
+/*const burger2 = document.querySelector(".hamburger");
 
 burger2.addEventListener('click', () => {
     alert("testi");
     document.querySelector('.hamburger').style = "transform: scale(2);"
 
-});
+});*/
 
 
 // Asetukset paikkatiedon hakua varten (valinnainen)
@@ -43,3 +43,19 @@ function error(err) {
 // Käynnistetään paikkatietojen haku
 navigator.geolocation.getCurrentPosition(success, error, options);
 
+const burgeri = document.querySelector('.navigation2__button');
+/*const navi = document.querySelector('.navigation2__nav');
+const background = document.querySelector('.navigation2__background');*/
+
+
+burgeri.addEventListener('click', () => {
+
+    /*navi.classList.toggle('background-active');
+    background.classList.toggle('navi-active');*/
+
+
+        document.querySelector('.navigation2__background').style.transform = "scale(120)"
+        document.querySelector('.navigation2__nav').style.opacity = "1";
+        document.querySelector('.navigation2__nav').style.width = "100%";
+
+});

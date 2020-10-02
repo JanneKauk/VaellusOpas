@@ -1,6 +1,7 @@
 .map-container {
   display: flex;
   height: 70vh;
+  z-index: 300;
 }
 
 #map {
@@ -12,7 +13,8 @@
   margin-right: auto;
   margin-left: auto;
 
-  /*@media screen and (max-width: 600px) {
-    height: 60%;width:75%;
-  }*/
+  @media screen and (max-width: 600px) {
+    height: 50vh;width: 50vh;
+    z-index: 300;
+  }
 }
