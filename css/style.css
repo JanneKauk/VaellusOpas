@@ -188,11 +188,10 @@ iframe {
     text-align: center; }
 
 .nav {
-  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh; }
+  min-height: 10vh; }
 
 .buttons {
   display: flex;
@@ -204,34 +203,36 @@ iframe {
 .buttons a {
   text-decoration: none;
   color: #ece7ff;
-  font-size: 30px; }
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.hamburger {
+  display: none; }
 
 .hamburger div {
   width: 25px;
   height: 3px;
   background-color: #ece7ff;
-  margin: 5px; }
-
-.hamburger {
-  display: none; }
-
-@media screen and (max-width: 700px) {
-  .buttons {
-    width: 70%; } }
+  margin: 5px;
+  transition: all 0.3s ease; }
 
 @media screen and (max-width: 800px) {
   body {
     overflow-x: hidden; }
   .buttons {
     position: absolute;
-    right: 0px;
-    height: 100vh;
+    top: 0;
+    right: 0;
+    height: 90vh;
     width: 100%;
     background-color: #7bd078;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateX(100%); }
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in; }
   .buttons li {
     opacity: 0; }
   .hamburger {
@@ -241,19 +242,24 @@ iframe {
     right: 0; } }
 
 .nav-active {
-  position: absolute;
-  transition: 0.5s ease-in;
-  transform: translateX(0%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
-  margin-bottom: -30%; }
+  transform: translateX(0%); }
 
 @keyframes buttonsFade {
   from {
     opacity: 0;
-    transform: translateX(5rem); }
+    transform: translateX(50px); }
   to {
     opacity: 1;
     transform: translateX(0); } }
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px); }
+
+.toggle .line2 {
+  opacity: 0; }
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px); }
 
 .navigation2__button {
   background-color: white;

@@ -1,12 +1,15 @@
 'use strict';
-const navSlide = () => {
+const navOpen = () => {
   const burger = document.querySelector('.hamburger');
   const nav = document.querySelector('.buttons');
-  const buttons = document.querySelectorAll('.buttons li');
+  const navLinks = document.querySelectorAll('.buttons li');
+
   burger.addEventListener('click', () => {
+    //Toggle Nav
     nav.classList.toggle('nav-active');
 
-    buttons.forEach((link, index) => {
+    //Animate links
+    navLinks.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = '';
       } else {
@@ -14,7 +17,9 @@ const navSlide = () => {
         0.3}s`;
       }
     });
+    //Burger animation
+    burger.classList.toggle('toggle');
   });
 };
 
-navSlide();
+navOpen();
