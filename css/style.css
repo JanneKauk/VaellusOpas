@@ -172,11 +172,11 @@ iframe {
   background-size: cover;
   background-position: top;
   position: relative;
-  margin-bottom: 10rem; }
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%); } }
+  margin-bottom: 10rem;
+  /*@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  }*/ }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko.jpg"); } }
@@ -206,7 +206,8 @@ iframe {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  z-index: 10001; }
 
 .hamburger {
   display: none; }
@@ -225,24 +226,28 @@ iframe {
     position: absolute;
     top: 0;
     right: 0;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-color: #7bd078;
     display: flex;
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in; }
+    transition: transform 0.5s ease-in;
+    z-index: 10001; }
   .buttons li {
     opacity: 0; }
   .hamburger {
     display: block;
     margin: 10px;
     position: absolute;
-    right: 0; } }
+    right: 0;
+    z-index: 10001; } }
 
 .nav-active {
-  transform: translateX(0%); }
+  position: fixed;
+  transform: translateX(0%);
+  z-index: 10000; }
 
 @keyframes buttonsFade {
   from {
