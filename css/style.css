@@ -221,15 +221,14 @@ iframe {
   .buttons {
     position: absolute;
     right: 0px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background-color: #0b790b;
+    background-color: #7bd078;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in; }
-  .buttons {
+    transform: translateX(100%); }
+  .buttons li {
     opacity: 0; }
   .hamburger {
     display: block;
@@ -238,7 +237,16 @@ iframe {
     right: 0; } }
 
 .nav-active {
+  transition: 0.5s ease-in;
   transform: translateX(0%); }
+
+@keyframes buttonsFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px); }
+  to {
+    opacity: 1;
+    transform: translateX(0px); } }
 
 .footer {
   background-color: #20221d;
