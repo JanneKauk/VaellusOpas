@@ -20,14 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd1245cb-1e12-4834-a399-2a1495df4f75" name="Default Changelist" comment="Burger bugi fixattu, kuvan skaalautuminen vinksahti ikkunan kokoa muuttaessa?">
+      <change afterPath="$PROJECT_DIR$/javascript/vaellusopas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/reitit.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reitit.html" beforeDir="false" afterPath="$PROJECT_DIR$/reitit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_navigation.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/pages/_reitit.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/_reitit.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testi.html" beforeDir="false" afterPath="$PROJECT_DIR$/testi.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +38,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -145,7 +144,14 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1601740396837</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Burger bugi fixattu, kuvan skaalautuminen vinksahti ikkunan kokoa muuttaessa?">
+      <created>1601749063718</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601749063718</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,15 +313,17 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="58" width="900" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601448399760" />
-    <state x="1816" y="238" key="Vcs.Push.Dialog.v2" timestamp="1601740400341">
-      <screen x="1440" y="23" width="1920" height="1057" />
+    <state x="501" y="285" key="Vcs.Push.Dialog.v2" timestamp="1601749091122">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="501" y="285" key="Vcs.Push.Dialog.v2/-3840.-349.2560.1413/0.0.2560.1400@0.0.2560.1400" timestamp="1601749091122" />
     <state x="282" y="183" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601463530191" />
     <state x="1816" y="238" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1601740400341" />
     <state x="282" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1601377040602" />
-    <state x="2080" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601645791657">
-      <screen x="1440" y="23" width="1920" height="1057" />
+    <state x="853" y="574" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601749070302">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="853" y="574" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3840.-349.2560.1413/0.0.2560.1400@0.0.2560.1400" timestamp="1601749070302" />
     <state x="2080" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1601645791657" />
     <state x="480" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1601377006515" />
     <state x="-1297" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1600964459072">
