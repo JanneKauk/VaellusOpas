@@ -168,22 +168,29 @@ iframe {
 .header {
   height: 65vh;
   max-height: 580px;
-  background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko_small.jpg");
-  background-size: cover;
-  background-position: top;
   position: relative;
-  margin-bottom: 10rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
-  /*@media only screen and (min-width: 640px) {
+  margin-bottom: 5rem; }
+  .header__image {
+    height: 65vh;
+    max-height: 580px;
+    z-index: -1;
+    background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko_small.jpg");
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    width: 100%;
+    margin-bottom: 10rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
-  }*/
-  /*@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
-  }*/ }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-    .header {
-      background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko.jpg"); } }
+    /*@media only screen and (min-width: 640px) {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+    }*/
+    /*@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+    }*/ }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+      .header__image {
+        background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko.jpg"); } }
   .header__container {
     position: absolute;
     top: 40%;
@@ -212,7 +219,7 @@ iframe {
   letter-spacing: 2px;
   text-transform: uppercase;
   z-index: 10001;
-  transition: all 5ss ease-out; }
+  transition: all 0.4s ease-out; }
 
 .buttons a:hover {
   letter-spacing: 9px;
@@ -373,10 +380,6 @@ iframe {
 
 body {
   padding: 0; }
-
-.header {
-  margin-bottom: 5rem;
-  max-height: 500px; }
 
 .main {
   display: flex;
