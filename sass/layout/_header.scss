@@ -1,11 +1,11 @@
 .header {
   height: 65vh;
-  max-height: 580px;
+  max-height: 58rem;
   position: relative;
   margin-bottom: 5rem;
   &__image{
     height: 65vh;
-    max-height: 580px;
+    max-height: 58rem;
     z-index: -1;
     background-image: linear-gradient(
                     to right,
@@ -25,15 +25,17 @@
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
     }*/
-
-    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-    only screen and (min-width: 125em) {
+    @media only screen and (max-width: 50rem) {
       background-image: linear-gradient(
                       to right,
                       rgba(187, 231, 178, 0.8),
                       rgba(#0b790b, 0.8)),
       url("../img/metsakko.jpg");
+    }
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+
     }
   }
 

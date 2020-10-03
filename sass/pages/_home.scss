@@ -1,20 +1,21 @@
 .main-home {
   height: 70vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 
-  @media screen and (min-width: 650px) and (max-width: 1000px) {
-    height: 55vh;
-  }
 
-  @media screen and (min-width: 36rem) and (max-width: 65rem) and (-webkit-min-device-pixel-ratio: 1) {
-    height: 40vh;
-  }
-  @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
+  /*@media screen and (max-width: 60rem) {
+    height: 60vh;
+  }*/
+
+  /*@media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
     height: 30vh;
   }
   @media screen and (max-width: 55rem) and (max-height: 92rem) {
-    height: 100vh;
-  }
+    height: 70vh;
+  }*/
 }
 
 

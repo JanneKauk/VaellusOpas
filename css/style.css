@@ -52,13 +52,12 @@ body {
         font-size: 4rem; } }
 
 iframe {
-  display: flex;
+  align-self: center;
   max-width: 100%;
   max-height: 100%;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
   left: 0;
   right: 0; }
   @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -68,7 +67,7 @@ iframe {
   @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
     iframe {
       width: 55%;
-      height: 40%; } }
+      height: 70%; } }
 
 .video-box {
   display: flex;
@@ -168,12 +167,12 @@ iframe {
 
 .header {
   height: 65vh;
-  max-height: 580px;
+  max-height: 58rem;
   position: relative;
   margin-bottom: 5rem; }
   .header__image {
     height: 65vh;
-    max-height: 580px;
+    max-height: 58rem;
     z-index: -1;
     background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko_small.jpg");
     background-size: cover;
@@ -189,7 +188,7 @@ iframe {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
     }*/ }
-    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    @media only screen and (max-width: 50rem) {
       .header__image {
         background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko.jpg"); } }
   .header__container {
@@ -230,13 +229,13 @@ iframe {
   display: none; }
 
 .hamburger div {
-  width: 25px;
-  height: 3px;
+  width: 2.5rem;
+  height: 0.3rem;
   background-color: #ece7ff;
-  margin: 5px;
+  margin: 0.5rem;
   transition: all 0.3s ease; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 80rem) {
   body {
     overflow-x: hidden; }
   .buttons {
@@ -253,13 +252,13 @@ iframe {
     transition: transform 0.5s ease-in;
     z-index: 10001; }
   .buttons a:hover {
-    letter-spacing: 9px;
-    font-size: 26px; }
+    letter-spacing: 0.9rem;
+    font-size: 2.6rem; }
   .buttons li {
     opacity: 0; }
   .hamburger {
     display: block;
-    margin: 10px;
+    margin: 1rem;
     position: absolute;
     right: 0;
     z-index: 10001; } }
@@ -272,7 +271,7 @@ iframe {
 @keyframes buttonsFade {
   from {
     opacity: 0;
-    transform: translateX(50px); }
+    transform: translateX(5rem); }
   to {
     opacity: 1;
     transform: translateX(0); } }
@@ -286,64 +285,6 @@ iframe {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px); }
 
-.navigation2__button {
-  background-color: white;
-  height: 5rem;
-  width: 5rem;
-  position: fixed;
-  top: 4rem;
-  right: 4rem;
-  border-radius: 50%;
-  z-index: 2000;
-  box-shadow: 0 1.2rem 2rem rgba(0, 0, 0, 0.1); }
-
-.navigation2__background {
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 5rem;
-  right: 5rem;
-  background-image: radial-gradient(#229422, #185418);
-  z-index: 1000; }
-
-.navigation2__nav {
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1500;
-  opacity: 0;
-  width: 0; }
-
-.navigation2__list {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center; }
-
-.navigation2__item {
-  margin: 1rem; }
-
-.navigation2__link:link, .navigation2__link:visited {
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-  background-size: 250%;
-  transition: all .6s; }
-
-.navigation2__link:hover, .navigation2__link:active {
-  background-position: 100%;
-  color: #1b5d04;
-  transform: translateY(0.3rem); }
-
 .footer {
   background-color: #20221d;
   padding: 5rem 0;
@@ -356,19 +297,19 @@ iframe {
 
 .main-home {
   height: 70vh;
-  position: relative; }
-  @media screen and (min-width: 650px) and (max-width: 1000px) {
-    .main-home {
-      height: 55vh; } }
-  @media screen and (min-width: 36rem) and (max-width: 65rem) and (-webkit-min-device-pixel-ratio: 1) {
-    .main-home {
-      height: 40vh; } }
-  @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
-    .main-home {
-      height: 30vh; } }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /*@media screen and (max-width: 60rem) {
+    height: 60vh;
+  }*/
+  /*@media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
+    height: 30vh;
+  }
   @media screen and (max-width: 55rem) and (max-height: 92rem) {
-    .main-home {
-      height: 100vh; } }
+    height: 70vh;
+  }*/ }
 
 .section-about {
   display: flex;
