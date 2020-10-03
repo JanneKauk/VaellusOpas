@@ -173,6 +173,10 @@ iframe {
   background-position: top;
   position: relative;
   margin-bottom: 10rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  /*@media only screen and (min-width: 640px) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  }*/
   /*@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
@@ -254,7 +258,7 @@ iframe {
 
 .nav-active {
   position: fixed;
-  transform: translateX(0%);
+  transform: translateX(0);
   z-index: 10000; }
 
 @keyframes buttonsFade {
