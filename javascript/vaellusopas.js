@@ -27,7 +27,7 @@ if ( document.URL.includes("reitit.html") ) {
         div.appendChild(newElement);
         newElement.querySelector("h2").innerText = item.Route;
         newElement.querySelector("img").src = item.img;
-        newElement.querySelector("h3 b").innerHTML = `Sijainti: ${item.Location}<br>Vaikeusaste: ${item.Difficulty}`;
+        newElement.querySelector("h3 b").innerHTML = `Lähtöpiste: ${item.Location}<br>Pituus: ${item.Difficulty}`;
         newElement.querySelector("p").innerText = item.Description;
     }
 }
