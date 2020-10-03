@@ -212,7 +212,7 @@ iframe {
   letter-spacing: 2px;
   text-transform: uppercase;
   z-index: 10001;
-  transition: all 0.4s ease-out; }
+  transition: all 5ss ease-out; }
 
 .buttons a:hover {
   letter-spacing: 9px;

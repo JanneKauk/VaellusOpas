@@ -22,8 +22,6 @@
     <list default="true" id="cd1245cb-1e12-4834-a399-2a1495df4f75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_navigation.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,7 @@
       <workItem from="1601631686523" duration="4388000" />
       <workItem from="1601645770708" duration="1129000" />
       <workItem from="1601651436159" duration="44000" />
-      <workItem from="1601719536728" duration="3775000" />
+      <workItem from="1601719536728" duration="4342000" />
     </task>
     <task id="LOCAL−00001" summary="Navbar muokattu ja lisätty hamburger">
       <created>1601454024142</created>
@@ -134,7 +132,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1601646886181</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Uusi logo. Navbar ja burgerivalikko animoitu.">
+      <created>1601740396837</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1601740396837</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +160,8 @@
     <MESSAGE value="Nappulat flexboksissa" />
     <MESSAGE value="Navbar muokattu ja lisätty hamburger" />
     <MESSAGE value="Valikko ja hampurilainen animoitu. Fonttia muutettu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Valikko ja hampurilainen animoitu. Fonttia muutettu" />
+    <MESSAGE value="Uusi logo. Navbar ja burgerivalikko animoitu." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uusi logo. Navbar ja burgerivalikko animoitu." />
   </component>
   <component name="WindowStateProjectService">
     <state x="369" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601448627478">
@@ -168,11 +173,11 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1600979742482" />
-    <state x="1440" y="52" key="CommitChangelistDialog2" timestamp="1601646886005">
+    <state x="1440" y="52" key="CommitChangelistDialog2" timestamp="1601740396655">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="0" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1601463411976" />
-    <state x="1440" y="52" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1601646886005" />
+    <state x="1440" y="52" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1601740396655" />
     <state x="1109" y="322" width="662" height="640" key="EditFileWatcherDialog" timestamp="1600942100858">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -290,11 +295,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="58" width="900" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601448399760" />
-    <state x="1816" y="238" key="Vcs.Push.Dialog.v2" timestamp="1601646890085">
+    <state x="1816" y="238" key="Vcs.Push.Dialog.v2" timestamp="1601740400341">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="282" y="183" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601463530191" />
-    <state x="1816" y="238" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1601646890085" />
+    <state x="1816" y="238" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1601740400341" />
     <state x="282" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1601377040602" />
     <state x="2080" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601645791657">
       <screen x="1440" y="23" width="1920" height="1057" />
