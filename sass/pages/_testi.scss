@@ -3,19 +3,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #f3f3f3;
+  background-color: white;
   padding: 20rem 0;
-  height: 70vh;
-  :hover {
-    //transform: scale(1.2);
-  }
+  margin-bottom: 3rem;
+
 
   @media screen and (max-width: 60rem) {
-    height: 65vh;
-  }
-  @media screen and (max-height: 80rem) {
-    height: 80vh;
-
+    //height: 90vh;
   }
 
 }
@@ -25,15 +19,17 @@
   flex-direction: column;
   background-color: rgba(white, 0.82);
   padding: 4.5rem;
-  margin: 2rem;
+  margin: auto 0;
   //max-height: 18rem;
   min-height: 25rem;
-  width: 60rem;
-  height: 60rem;
-  text-align: center;
+  width: 90vw;
+  //height: 80vh;
   border-radius: 3px;
   box-shadow: 0 1.2rem 4rem rgba(black, .15);
-  overflow: scroll;
+  //overflow: scroll;
+  text-align: center;
+
+
 
 
 
@@ -49,6 +45,7 @@
   &__text {
     margin-top: 2rem;
     font-size: 2rem;
+    text-align: left;
   }
 
   &__img {
