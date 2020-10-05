@@ -47,15 +47,15 @@
     overflow-x: hidden;
   }
   .buttons {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 100%;
+    height: 10%;
+    width: 100vw;
     background-color: #7bd078;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     z-index: 10001;
@@ -74,9 +74,9 @@
 
   .hamburger {
     display: block;
-    margin: 1rem;
     position: absolute;
-    right: 0;
+    right: 25px;
+    top: 25px;
     z-index: 10001;
   }
 }

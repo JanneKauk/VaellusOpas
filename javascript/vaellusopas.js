@@ -33,7 +33,7 @@ if ( document.URL.includes("reitit.html") ) {
 }
 
 //testi sivu
-if (document.URL.includes("testi.html")){
+if (document.URL.includes("ohjeet.html")){
     // Asetukset paikkatiedon hakua varten (valinnainen)
     const options = {
         enableHighAccuracy: true,
