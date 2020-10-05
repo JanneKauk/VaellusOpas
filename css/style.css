@@ -26,11 +26,6 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-body {
-  font-family: "sans-serif";
-  font-weight: 350;
-  line-height: 1.5; }
-
 .heading-main {
   color: #f8f8f8;
   display: flex;
@@ -124,29 +119,31 @@ iframe {
   display: flex;
   flex-wrap: wrap;
   font-size: medium;
-  padding: 3rem; }
+  padding: 3rem;
+  margin-bottom: 5rem;
+  border-bottom-style: inset; }
   .reitti-box__reitti-kuva {
     background-color: rgba(255, 255, 255, 0.82);
     margin-top: 0.7rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-right: 3rem;
-    width: 15%;
+    width: 50%;
     height: 100%;
     border-radius: 3px;
     box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
     transition: transform .3s; }
     @media screen and (min-width: 650px) and (max-width: 1000px) {
       .reitti-box__reitti-kuva {
-        width: 30%; } }
+        width: 60%; } }
     @media screen and (min-width: 26rem) and (max-width: 65rem) and (-webkit-min-device-pixel-ratio: 1) {
       .reitti-box__reitti-kuva {
-        width: 30%; } }
+        width: 60%; } }
     @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
       .reitti-box__reitti-kuva {
-        width: 30%; } }
+        width: 60%; } }
     @media screen and (max-width: 55rem) and (max-height: 92rem) {
       .reitti-box__reitti-kuva {
-        width: 30%; } }
+        width: 60%; } }
 
 .map-box {
   display: flex;
@@ -369,17 +366,9 @@ iframe {
     font-size: 3rem;
     line-height: 80%; }
   .main div span {
-    width: 80%; }
+    width: 100%;
+    margin-bottom: 5rem; }
 
-/*.main div h2{
-  width: 100%;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  line-height: 80%;
-}*/
-/*.main span{
-  width: 80%;
-}*/
 .section-about {
   display: flex;
   flex-direction: row;
