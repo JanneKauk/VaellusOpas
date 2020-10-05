@@ -346,7 +346,7 @@ iframe {
   width: 70%;
   background-color: #00000008;
   box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
-  padding: 5rem; }
+  padding: 5rem 7rem 5rem 7rem; }
   @media screen and (min-width: 650px) and (max-width: 1000px) {
     .main div {
       width: 100%; } }
@@ -364,6 +364,8 @@ iframe {
   .main div span {
     width: 100%;
     margin-bottom: 5rem; }
+    .main div span p {
+      margin-top: 2rem; }
 
 .section-about {
   display: flex;
