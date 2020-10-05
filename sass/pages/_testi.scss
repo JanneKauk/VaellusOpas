@@ -37,7 +37,7 @@
 
 
   &__heading {
-    width: 50%;
+    width: 100%;
     font-size: 3rem;
   }
   &__imgtext {
@@ -47,24 +47,28 @@
     width: 100%;
   }
 
+
+  &__img-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+  }
+  &__img {
+    width: 30rem;
+
+    @media screen and (max-width: 60rem) {
+      width: 25rem;
+    }
+  }
+
   &__tex-container {
-    display: inline-flex;
+
     width: 50%;
   }
   &__text {
     margin-top: 2rem;
-    margin-left: 5rem;
+
     font-size: 2rem;
     text-align: left;
-  }
-  &__img-container {
-    width: 50%;
-  }
-  &__img {
-    width: 50%;
-
-    @media screen and (max-width: 60rem) {
-      width: 100%;
-    }
   }
 }
