@@ -57,11 +57,7 @@ iframe {
   margin-right: auto;
   left: 0;
   right: 0; }
-  @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-    iframe {
-      width: 95%;
-      height: 75%; } }
-  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+  @media screen and (max-width: 360px) {
     iframe {
       width: 55%;
       height: 70%; } }
@@ -402,25 +398,25 @@ iframe {
     .ohje-box {
       width: 100vw; } }
   .ohje-box__heading {
-    width: 50%;
+    width: 100%;
     font-size: 3rem; }
   .ohje-box__imgtext {
     display: flex;
     flex-flow: row wrap;
     margin-top: 2rem;
     width: 100%; }
+  .ohje-box__img-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%; }
+  .ohje-box__img {
+    width: 30rem; }
+    @media screen and (max-width: 60rem) {
+      .ohje-box__img {
+        width: 25rem; } }
   .ohje-box__tex-container {
-    display: inline-flex;
     width: 50%; }
   .ohje-box__text {
     margin-top: 2rem;
-    margin-left: 5rem;
     font-size: 2rem;
     text-align: left; }
-  .ohje-box__img-container {
-    width: 50%; }
-  .ohje-box__img {
-    width: 50%; }
-    @media screen and (max-width: 60rem) {
-      .ohje-box__img {
-        width: 100%; } }

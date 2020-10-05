@@ -8,17 +8,9 @@ iframe {
   left: 0;
   right: 0;
 
+
   @media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-      width: 95%;
-      height: 75%;
-    }
-  @media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 2) {
+  and (max-width: 360px) {
     width: 55%;
     height: 70%;
   }
