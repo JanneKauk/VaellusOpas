@@ -22,33 +22,49 @@
   margin: auto 0;
   //max-height: 18rem;
   min-height: 25rem;
-  width: 90vw;
+  width: 50vw;
   //height: 80vh;
   border-radius: 3px;
   box-shadow: 0 1.2rem 4rem rgba(black, .15);
-  //overflow: scroll;
   text-align: center;
+
+  @media screen and (max-width: 60rem) {
+    width: 100vw;
+  }
 
 
 
 
 
   &__heading {
-    width: 100%;
+    width: 50%;
     font-size: 3rem;
   }
   &__imgtext {
+    display: flex;
+    flex-flow: row wrap;
     margin-top: 2rem;
     width: 100%;
   }
 
+  &__tex-container {
+    display: inline-flex;
+    width: 50%;
+  }
   &__text {
     margin-top: 2rem;
+    margin-left: 5rem;
     font-size: 2rem;
     text-align: left;
   }
-
+  &__img-container {
+    width: 50%;
+  }
   &__img {
+    width: 50%;
 
+    @media screen and (max-width: 60rem) {
+      width: 100%;
+    }
   }
 }
