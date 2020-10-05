@@ -18,6 +18,7 @@
 }
 
 .buttons button {
+  outline: none;
   background: none;
   border: none;
   text-decoration: none;
@@ -27,11 +28,15 @@
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   z-index: 10001;
-  transition: all 0.4s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .buttons button:hover {
   transform: scale(1.25);
+}
+.buttons button:active{
+  color: #ece7ff9e;
+  transition: 0s;
 }
 
 .hamburger {
