@@ -362,7 +362,7 @@ iframe {
 .main div {
   width: 70%;
   background-color: #00000008;
-  box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.2rem 4rem rgba(0, 0, 0, 0.15);
   padding: 5rem 7rem 5rem 7rem; }
   @media screen and (min-width: 650px) and (max-width: 1000px) {
     .main div {
@@ -373,16 +373,26 @@ iframe {
   @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
     .main div {
       width: 100%; } }
+  @media only screen and (min-width: 2500px) {
+    .main div {
+      padding: 10rem 13rem 10rem 13rem; } }
   .main div h2 {
     width: 100%;
     margin-bottom: 2rem;
     font-size: 3rem;
     line-height: 80%; }
+    @media only screen and (min-width: 1950px) {
+      .main div h2 {
+        font-size: 5rem; } }
   .main div span {
     width: 100%;
-    margin-bottom: 5rem; }
+    margin-bottom: 5rem;
+    font-size: 2rem; }
     .main div span p {
       margin-top: 2rem; }
+    @media only screen and (min-width: 1950px) {
+      .main div span {
+        font-size: 3rem; } }
 
 .section-about {
   display: flex;
@@ -495,7 +505,6 @@ iframe {
 
 .nappi {
   background-color: #4CAF50;
-  /* Green */
   border: none;
   color: white;
   padding: 1.5rem 3.2rem;
@@ -571,5 +580,4 @@ select::-ms-expand {
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #cccccc;
-  -ms-word-break: normal;
   word-break: normal; }

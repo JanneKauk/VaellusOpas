@@ -8,7 +8,7 @@
 .main div{
   width: 70%;
   background-color: #00000008;
-  box-shadow: 0 1.2rem 4rem rgba(black, .15);
+  box-shadow: 0 0.2rem 4rem rgba(black, .15);
 
   padding: 5rem 7rem 5rem 7rem;
   @media screen and (min-width: 650px) and (max-width: 1000px) {
@@ -20,18 +20,28 @@
   @media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
     width: 100%;
   }
+  @media only screen and (min-width: 2500px) {
+    padding: 10rem 13rem 10rem 13rem;
+  }
 
   h2 {
     width: 100%;
     margin-bottom: 2rem;
     font-size: 3rem;
     line-height: 80%;
+    @media only screen and (min-width: 1950px) {
+      font-size: 5rem;
+    }
   }
   span {
     width: 100%;
     margin-bottom: 5rem;
+    font-size: 2rem;
     p{
       margin-top: 2rem;
+    }
+    @media only screen and (min-width: 1950px) {
+      font-size: 3rem;
     }
   }
 }
