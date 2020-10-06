@@ -100,12 +100,22 @@ if (document.URL.includes("ohjeet.html")){
             }).addTo(map);
 
 
-            let nuuksio = L.circle([60.28, 24.90], {
+            crd.latitude
+            L.Routing.control({
+                waypoints: [
+                    L.latLng(crd.latitude, crd.longitude),
+                    L.latLng(60.3209, 24.598)
+                ],
+                routeWhileDragging: true
+                }).addTo(map);
+
+            let nuuksio = L.circle([60.32728, 24.4935], {
                 color: 'red',
                 fillColor: '#03',
                 fillOpacity: 0.7,
-                radius: 500
+                radius: 2000
             }).addTo(map);
+            nuuksio.bindPopup("<p> Nuuksion kansallispuisto</p>");
 
             let marker = L.marker([60.28, 24.70]).addTo(map);
             marker.bindPopup("<p> Hey you!</p>").openPopup();
@@ -114,21 +124,22 @@ if (document.URL.includes("ohjeet.html")){
                 color: 'red',
                 fillColor: '#03',
                 fillOpacity: 0.7,
-                radius: 1000
+                radius: 2000
             }).addTo(map);
+            karhunKierros.bindPopup("<p> Karhunkierros </p>");
 
             let haltinVaellus = L.circle([69.2853282671778, 21.26888751983643], {
                 color: 'red',
                 fillColor: '#03',
                 fillOpacity: 0.7,
-                radius: 1000
+                radius: 2000
             }).addTo(map);
 
             let kevonReitti = L.circle([69.588956, 26.732037], {
                 color: 'red',
                 fillColor: '#03',
                 fillOpacity: 0.7,
-                radius: 1000
+                radius: 2000
             }).addTo(map);
 
 
@@ -136,14 +147,14 @@ if (document.URL.includes("ohjeet.html")){
                 color: 'red',
                 fillColor: '#03',
                 fillOpacity: 0.7,
-                radius: 1000
+                radius: 2000
             }).addTo(map);
 
             let pyhaLuosto = L.circle([67.019288, 27.251926], {
-                color: 'blue',
+                color: 'red',
                 fillColor: '#03',
                 fillOpacity: 0.6,
-                radius: 1000
+                radius: 2000
             }).addTo(map);
 
             map.on('click', function (e) {
