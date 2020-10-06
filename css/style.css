@@ -84,33 +84,6 @@ iframe {
   .info-box__text {
     color: white; }
 
-.image-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-flow: row nowrap;
-  align-content: flex-end; }
-  @media screen and (max-width: 90rem) {
-    .image-box {
-      flex-flow: column nowrap; } }
-  .image-box__caption {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 2rem; }
-  .image-box__images {
-    /*@media screen and (max-width: 90rem) {
-
-    }*/ }
-  .image-box__kuva {
-    transform: scale(0.6);
-    width: 15rem;
-    height: 15rem;
-    margin: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 50%; }
-
 .reitti-box {
   display: flex;
   flex-wrap: wrap;
@@ -207,7 +180,6 @@ iframe {
 .nav {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   min-height: 10vh; }
 
 .buttons {
@@ -232,7 +204,8 @@ iframe {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   z-index: 10001;
-  transition: all 0.2s ease-out; }
+  transition: all 0.2s ease-out;
+  cursor: pointer; }
 
 .buttons button:hover {
   transform: scale(1.25); }
@@ -265,7 +238,7 @@ iframe {
     flex-direction: row;
     justify-content: space-around;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease;
     z-index: 10001; }
   .buttons button:hover {
     transform: scale(1.25); }
@@ -276,6 +249,7 @@ iframe {
     position: absolute;
     right: 2.5rem;
     top: 2.5rem;
+    cursor: pointer;
     z-index: 10001; } }
 
 .nav-active {
@@ -301,14 +275,53 @@ iframe {
   transform: rotate(45deg) translate(-5px, -6px); }
 
 .footer {
-  background-color: #20221d;
-  padding: 5rem 0;
-  margin-top: 10rem; }
+  background-color: #cacbcf;
+  width: 100%;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em; }
 
 .footer-text {
   text-align: center;
+  margin-bottom: 2rem;
   font-size: 3rem;
-  color: #f1e8e8; }
+  color: black; }
+
+.image-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 15vh; }
+
+.image-box img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%; }
+
+.image-box figure {
+  width: 20rem;
+  height: 20rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+@media screen and (max-width: 60rem) {
+  .image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .image-box figure {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem; }
+  .image-box img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%; } }
 
 .main-home {
   height: 70vh;
