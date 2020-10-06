@@ -148,13 +148,13 @@ iframe {
       z-index: 300; } }
 
 .header {
-  height: 65vh;
-  max-height: 58rem;
+  height: 40rem;
+  max-height: 30rem;
   position: relative;
-  margin-bottom: 5rem; }
+  margin-bottom: 0rem; }
   .header__image {
-    height: 65vh;
-    max-height: 58rem;
+    height: 40rem;
+    max-height: 30rem;
     z-index: -1;
     background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko_small.jpg");
     background-size: cover;
@@ -162,7 +162,7 @@ iframe {
     position: absolute;
     width: 100%;
     margin-bottom: 10rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
     /*@media only screen and (min-width: 640px) {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
     }*/
@@ -173,6 +173,19 @@ iframe {
     @media only screen and (max-width: 50rem) {
       .header__image {
         background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko.jpg"); } }
+  .header .h1_container {
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem; }
+    .header .h1_container h1 {
+      color: #ffffff;
+      font-size: 6rem;
+      width: fit-content;
+      font-weight: 100;
+      text-transform: uppercase; }
   .header__container {
     position: absolute;
     top: 40%;
@@ -182,8 +195,7 @@ iframe {
 
 .nav {
   display: flex;
-  justify-content: space-around;
-  min-height: 10vh; }
+  justify-content: space-around; }
 
 .buttons {
   display: flex;
@@ -196,6 +208,10 @@ iframe {
 .buttons li {
   margin-right: 5rem; }
 
+.nav ul {
+  margin-right: 5rem;
+  margin-left: auto; }
+
 .buttons button {
   outline: none;
   background: none;
@@ -203,7 +219,7 @@ iframe {
   text-decoration: none;
   color: #ece7ff;
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   z-index: 10001;
@@ -244,6 +260,9 @@ iframe {
     z-index: 10001; }
   .buttons button:hover {
     transform: scale(1.25); }
+  .nav ul {
+    margin-right: 0;
+    margin-left: auto; }
   .buttons li {
     opacity: 0; }
   .hamburger {
@@ -283,7 +302,8 @@ iframe {
   background-color: #cacbcf;
   width: 100%;
   border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em; }
+  border-bottom-right-radius: 2em;
+  margin-top: 5rem; }
 
 .footer-text {
   text-align: center;
@@ -357,7 +377,8 @@ iframe {
   flex-wrap: nowrap;
   height: auto;
   position: relative;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 5rem; }
 
 .main div {
   width: 70%;

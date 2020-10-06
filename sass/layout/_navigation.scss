@@ -1,7 +1,6 @@
 .nav  {
   display: flex;
   justify-content: space-around;
-  min-height: 10vh;
 }
 
 .buttons {
@@ -15,6 +14,10 @@
 .buttons li{
   margin-right: 5rem;
 }
+.nav ul{
+  margin-right: 5rem;
+  margin-left: auto;
+}
 
 .buttons button {
   outline: none;
@@ -23,7 +26,7 @@
   text-decoration: none;
   color: #ece7ff;
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   z-index: 10001;
@@ -73,7 +76,10 @@
   .buttons button:hover {
     transform: scale(1.25);
   }
-
+  .nav ul{
+    margin-right: 0;
+    margin-left: auto;
+  }
 
   .buttons li {
     opacity: 0;

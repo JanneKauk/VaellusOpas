@@ -1,11 +1,11 @@
 .header {
-  height: 65vh;
-  max-height: 58rem;
+  height: 40rem;
+  max-height: 30rem;
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 0rem;
   &__image{
-    height: 65vh;
-    max-height: 58rem;
+    height: 40rem;
+    max-height: 30rem;
     z-index: -1;
     background-image: linear-gradient(
                     to right,
@@ -17,7 +17,7 @@
     position: absolute;
     width: 100%;
     margin-bottom: 10rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
     /*@media only screen and (min-width: 640px) {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
     }*/
@@ -38,6 +38,23 @@
 
     }
   }
+  .h1_container{
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+
+    h1{
+      color: #ffffff;
+      font-size: 6rem;
+      width: fit-content;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }
+
 
   &__container {
     position: absolute;
