@@ -1,21 +1,25 @@
 .main-home {
-  height: 70vh;
+  height: 90vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 10rem 0;
+  margin-bottom: 1rem;
+  clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 93%);
+  //background-color: #7bd078;
+  background-image: linear-gradient(
+                  to right,
+                  rgba(187, 231, 178, 0.9),
+                  rgba(#0b790b, 0.7));
 
 
-  /*@media screen and (max-width: 60rem) {
-    height: 60vh;
-  }*/
-
-  /*@media screen and (min-width: 10rem) and (max-width: 36rem) and (-webkit-min-device-pixel-ratio: 1) and (max-height: 700px) {
-    height: 30vh;
+  @media screen and (max-width: 60rem) {
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 97%);
   }
-  @media screen and (max-width: 55rem) and (max-height: 92rem) {
-    height: 70vh;
-  }*/
+
+
 }
 
 

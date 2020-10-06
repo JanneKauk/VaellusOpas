@@ -1,7 +1,7 @@
 iframe {
   align-self: center;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 80%;
+  max-height: 80%;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -19,11 +19,14 @@ iframe {
 
 
 .video-box {
-  //width: 50%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 10rem;
+  margin-top: 10rem;
+  background-color: white;
+
 
   &__content {
     width: 70%;

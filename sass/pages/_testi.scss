@@ -3,13 +3,20 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  padding: 20rem 0;
+  //background-color: white;
+  padding: 10rem 0;
   margin-bottom: 3rem;
+  clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 93%);
+  //background-color: #7bd078;
+  background-image: linear-gradient(
+                  to right,
+                  rgba(187, 231, 178, 0.9),
+                  rgba(#0b790b, 0.7));
 
 
   @media screen and (max-width: 60rem) {
     //height: 90vh;
+    clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 97%);
   }
 
 }
@@ -17,16 +24,18 @@
 .ohje-box {
   display: flex;
   flex-direction: column;
-  background-color: rgba(white, 0.82);
+  background-color: rgba(#fff, 100);
   padding: 4.5rem;
   margin: auto 0;
   //max-height: 18rem;
   min-height: 25rem;
-  width: 50vw;
+  width: 60vw;
   //height: 80vh;
   border-radius: 3px;
   box-shadow: 0 1.2rem 4rem rgba(black, .15);
   text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 
   @media screen and (max-width: 60rem) {
     width: 100vw;
@@ -37,21 +46,23 @@
 
 
   &__heading {
-    width: 100%;
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: #1fbf1a;
   }
   &__imgtext {
     display: flex;
     flex-flow: row wrap;
     margin-top: 2rem;
+    margin-bottom: -6rem;
     width: 100%;
   }
 
 
   &__img-container {
     display: flex;
-    justify-content: flex-start;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
   }
   &__img {
     width: 30rem;
@@ -61,14 +72,180 @@
     }
   }
 
-  &__tex-container {
+  &__text-container {
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    width: 100%;
 
-    width: 50%;
+
   }
   &__text {
     margin-top: 2rem;
-
     font-size: 2rem;
     text-align: left;
+    margin-bottom: 3rem;
+
+    @media screen and (max-width: 60rem) {
+      font-size: 1.2rem;
   }
+  }
+  &__luettelo {
+
+    list-style-position: inside;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 11vw;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 60rem) {
+      width: 60vw;
+      font-size: 1rem;
+    }
+
+
+    &__items {
+      text-align: center;
+      margin-bottom: 0.3rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.divider {
+  margin-bottom: 3rem;
+  color: green;
+  border-top: 0.2rem;
+  border-top-style: groove;
+  border-color: lightblue;
+}
+
+.laskuri {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#vesi {
+  width: 6vw;
+  margin-bottom: 1rem;
+  min-width: 13rem;
+  text-align: center;
+
+  @media screen and (max-width: 60rem) {
+    width: 10vw;
+  }
+}
+.nappi {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 1.5rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  width: 6vw;
+  min-width: 10rem;
+  @media screen and (max-width: 60rem) {
+    width: 10vw;
+  }
+}
+
+.tulos {
+
+
+}
+
+
+
+
+
+
+
+.dropdown-content {
+
+  background-color: #f1f1f1;
+  min-width: 8rem;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+
+
+#myDropdown {
+  border-style: double;
+  border-color: #8bcf8b;
+  background-color: #4CAF50;
+  color: white;
+  max-width: 12rem;
+  min-width: 9rem;
+
+
+}
+
+.selectdiv {
+  width: 8vw;
+  position: relative;
+  float: left;
+  min-width: 8vw;
+  max-width: 8.5rem;
+  margin: 0 41%;
+
+
+
+  @media screen and (max-width: 60rem) {
+    width: 8vw;
+    min-width: 8vw;
+    max-width: 8rem;
+    margin: 1rem 41vw;
+  }
+
+  :after {
+    content: '<>';
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 1rem;
+
+    top: 1.8rem;
+    padding: 0 0 0.2rem;
+    border-bottom: 0.1rem solid #999;
+    /*left line */
+
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  display: block;
+  width: 100%;
+  max-width: 32rem;
+  height: 50px;
+  float: right;
+  margin: 0.5rem 0;
+  padding: 0 2.4rem;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  word-break: normal;
 }

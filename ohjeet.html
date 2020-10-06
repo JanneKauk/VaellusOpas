@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vaellusopas</title>
-
+    <link rel="icon" href="img/vaelluslogo.svg" type="image/x-icon"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -32,43 +32,83 @@
     </nav>
 </header>
 
-<main class="map-box">
+
+<main>
+    <section class="section-laatikko">
+        <div class="ohje-box">
+
+            <div class="ohje-box__imgtext">
+            <div class="ohje-box__text-container">
+                <div class="divider"></div>
+                <h3 class="ohje-box__heading">Ohjeet</h3>
+                <p class="ohje-box__text">
+                Tässä on ohjeita varusteiden hankintaan. Tässä jotain random tekstiä. vielä lisää. Testaan tässä taas tekstiä.
+                Mitä kannattaa ottaa mukaan:
+                </p>
+
+                <p class="ohje-box__text">
+                    Tässä on ohjeita varusteiden hankintaan. Tässä jotain random tekstiä. vielä lisää. Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                </p>
+                <div class="divider"></div>
+                <h3 class="ohje-box__heading">Varusteet</h3>
+
+                <ol class="ohje-box__luettelo">
+                    <li class="ohje-box__luettelo__items">Rinkka</li>
+                    <li class="ohje-box__luettelo__items">Paljon vettä</li>
+                    <li class="ohje-box__luettelo__items">Haavanhoitotarvikkeet</li>
+                    <li class="ohje-box__luettelo__items">Ruokaa joka ei mene helposti pilalle</li>
+                    <li class="ohje-box__luettelo__items">Lisää vettä</li>
+                    <li class="ohje-box__luettelo__items">Juomarakko on hyvä idea</li>
+                </ol>
+                <p class="ohje-box__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>Valitse vuodenaika</p>
+                <div class="selectdiv">
+                    <label for="myDropdown"></label>
+                    <select id="myDropdown" class="dropdown-content">
+                        <option value="Kesä">Kesä</option>
+                        <option value="Syksy">Syksy</option>
+                        <option value="Talvi">Talvi</option>
+                        <option value="Kevät">Kevät</option>
+                    </select>
+                </div>
+                <p>Laskuri veden määrälle<br />Kuinka monen päivän retki?</p>
+                <div class="laskuri">
+
+                <label for="vesi"></label><input id="vesi" onfocus="this.value=''">
+                <button class="nappi">Laske</button>
+
+                </div>
+                <p class="tulos">tulos</p>
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+<aside class="map-box">
     <article class="map-box__content">
         <figure class="map-container">
             <div id="map" ></div>
         </figure>
     </article>
-</main>
-<aside>
-    <section class="section-laatikko">
-        <div class="ohje-box">
-            <h3 class="ohje-box__heading">Varusteet</h3>
-            <div class="ohje-box__imgtext">
-
-                <div class="ohje-box__img-container">
-                    <img src="img/IMG_20200910_092605.jpg" class="ohje-box__img" alt="testikuvavain" width="300" height="200">
-                </div>
-            <div class="ohje-box__text-container">
-                <p class="ohje-box__text">
-                Tässä on ohjeita varusteiden hankintaan. Tässä jotain random tekstiä. vielä lisää. Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                </p>
-            </div>
-            </div>
-
-        </div>
-    </section>
 </aside>
 <footer class="footer">
         <p class="footer-text">Tekijät</p>
