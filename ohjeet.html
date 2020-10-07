@@ -42,40 +42,27 @@
         <div class="ohje-box">
 
             <div class="ohje-box__imgtext">
-            <div class="ohje-box__text-container">
+            <article class="ohje-box__text-container">
                 <div class="divider"></div>
                 <h3 class="ohje-box__heading">Ohjeet</h3>
                 <p class="ohje-box__text">
-                Tässä on ohjeita varusteiden hankintaan. Tässä jotain random tekstiä. vielä lisää. Testaan tässä taas tekstiä.
-                Mitä kannattaa ottaa mukaan:
+                Miten kannattaa varautua, jos ei ole pitkään aikaan retkeillyt. Jos olet käynyt intin
+                niin on jo jonkin verran kokemusta metsissä olemisesta. Kuitenkin joku pitää huolen että kaikki tarvittava on mukana
+                , vettä saa jatkuvasti lisää ja ruoka tuodaan leirille. Kun retkeilee yksin tai porukalla niin pitää itse ottaa kaikki mahdollinen huomioon.
+                Ei ole välttämättä erillisiä vedentäyttöpisteitä, eli joutuu kantamaan kaiken veden mukana.  Itse kuivatettu ruoka on ideaalista tai muu kuivattu ruoka johon yleensä
+                tarvitsee vettä valmistukseen. Helposti pilalle menevä ruoka ei ole varsinkaan kesällä hyvä ajatus. Talvella taas elintarvikkeet jäätyvät.
+                Vettä tarvitsee yllättävän paljon, jos yhtään kävelee painavien varusteiden kanssa. Ei kannata heti ensimmäiseksi tehdä viikon retkeä lapin erämäässä. Varsinkaan
+                jos ei ole kokeillut varusteiden kuntoa ja kuinka kunto kestää. Kannattaa aloittaa päiväkävelyllä jossain helppokulkuisessa luonnonpuistoissa.
+                Tämän jälkeen 1-2 yötä teltassa, jos tämänkään jälkeen ei huomaa ongelmia varustuksessa niin ihmettelen. Veden määrän tarve on yksilöllistä, mutta
+                alhaalla olevalla laskurilla voi laskea veden määrän retken keston mukaan.
                 </p>
-
                 <p class="ohje-box__text">
-                    Tässä on ohjeita varusteiden hankintaan. Tässä jotain random tekstiä. vielä lisää. Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
-                    Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.Testaan tässä taas tekstiä.
+                    Vaikka varusteet ovatkin yksilöllisiä
+                    Mitä kannattaa ottaa mukaan:
                 </p>
                 <div class="divider"></div>
                 <h3 class="ohje-box__heading">Varusteet</h3>
 
-                <ol class="ohje-box__luettelo">
-                    <li class="ohje-box__luettelo__items">Rinkka</li>
-                    <li class="ohje-box__luettelo__items">Paljon vettä</li>
-                    <li class="ohje-box__luettelo__items">Haavanhoitotarvikkeet</li>
-                    <li class="ohje-box__luettelo__items">Ruokaa joka ei mene helposti pilalle</li>
-                    <li class="ohje-box__luettelo__items">Lisää vettä</li>
-                    <li class="ohje-box__luettelo__items">Juomarakko on hyvä idea</li>
-                </ol>
                 <p class="ohje-box__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -94,20 +81,17 @@
                 </div>
                 <p>Laskuri veden määrälle<br />Kuinka monen päivän retki?</p>
                 <div class="laskuri">
-
-                <label for="vesi"></label><input id="vesi" onfocus="this.value=''">
-                <button class="nappi">Laske</button>
-
+                    <label for="vesi"></label><input id="vesi" onfocus="this.value=''">
+                    <button class="nappi">Laske</button>
                 </div>
                 <p class="tulos">tulos</p>
+            </article>
             </div>
-
-            </div>
-
         </div>
     </section>
 </main>
 <aside class="map-box">
+    <h1>Vasemmalla hiiren klikkauksella reitti omasta sijainnista. Oikealla hiiren klikkauksella voi poistaa markerin</h1>
     <article class="map-box__content">
         <figure class="map-container">
             <div id="map" ></div>
@@ -115,7 +99,6 @@
     </article>
 </aside>
 
-</body>
 <footer class="footer">
     <figure class="footer__image"></figure>
     <div class="footer__logo-container" style="width: fit-content;">
@@ -133,4 +116,6 @@
 <script src="javascript/vaellusopas.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
 <script src="javascript/leaflet-routing-machine.js"></script>
+</body>
+
 </html>

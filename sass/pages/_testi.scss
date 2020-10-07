@@ -80,13 +80,13 @@
 
   }
   &__text {
-    margin-top: 2rem;
     font-size: 2rem;
     text-align: left;
-    margin-bottom: 3rem;
+    margin: 2rem 12rem 5rem 12rem;
 
     @media screen and (max-width: 60rem) {
       font-size: 1.2rem;
+      margin: 2rem 0 3rem 0;
   }
   }
   &__luettelo {

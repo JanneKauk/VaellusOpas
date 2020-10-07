@@ -5,7 +5,8 @@
       "Difficulty": "Keskipitkä",
       "Location": "Pallastunturin luontokeskus",
       "Description": "Pallas-Yllästunturin alueella on runsaasti vaellusreittejä: yksi parhaista on ehdottomasti 55 kilometrin mittainen Hetta-Pallas -reitti, joka tarjoaa tunturimaisemaa silmänkantamattomiin! Yksi vaellusreitin kohokohdista on Pallaksen korkeimman laen, 807 metriin nousevan Taivaskeron ohittaminen.\n\nTavallisesti Hetta-Pallas -reitin vaellus kestää 3-4 päivää, mutta onpa sitä kuultu huhuja kahviloiden tiskeillä myös kavereista, jotka kiskovat tuon 55 kilometriä kahteen päivään. Reitiltä löytyy runsaasti autiotupia - ja jopa sauna Hannukurun tupien yhteydessä noin reitin puolivälistä.\n\nParas aika reitin vaeltamiseen on noin juhannuksesta lokakuuhun. Vaellusreitin päät ovat Hetan kirkonkylä ja Pallastunturin luontokeskus.",
-      "coord": "[68.1333, 23.933372]"
+      "latitude": "68.1333",
+      "longitude": "23.933372"
     },
     {
       "Route": "Karhunkierros",
@@ -13,7 +14,8 @@
       "Difficulty": "Keskipitkä",
       "Location": "Oulangan luontokeskus",
       "Description": "Karhunkierros on Suomen suosituin vaellusreitti ja syystä! 80 kilometriä pitkä vaellus on tasoltaan keskivaativa ja vie tavallisesti 3-7 päivää tahdistasi riippuen. Koska reitillä on runsaasti autiotupia ja muita retkeilyrakenteita, sopii se kaikille vaeltajille aina noviiseista konkareihin. Vaikka autiotuvissakin voi yöpyä, on silti suositeltavaa kantaa oma teltta mukana. Ikinä ei voi tietää ovatko autiotuvat jo täynnä!\n\nTavallisesti Karhunkierrosta suositellaan noin kesäkuun alusta lokakuun puoliväliin. Toki näidenkin aikojen ulkopuolella reitti saattaa olla vaelluskunnossa, mutta tällöin polku saattaa olla jäinen.\n\nKarhunkierros kulkee Oulangan kansallispuiston maisemissa ja sen lähtöpisteelle pääsee helposti Sallasta ja Kuusamosta. ",
-      "coord": "[66.269, 26.4044]"
+      "latitude": "66.269",
+      "longitude": "26.4044"
     },
     {
       "Route": "Haltin vaellus",
@@ -21,7 +23,8 @@
       "Difficulty": "Pitkä",
       "Location": "Kilpisjärvi",
       "Description": "Tämän korkeammalle et Suomessa pääse! Aivan Norjan rajalla Suomen käsivarren erämaassa sijaitseva Halti nousee 1324 metriä merenpinnan yläpuolelle. Haltin vaellus alkaa Kilpisjärveltä ja on noin 55 kilometriä yhteen suuntaan. Luonnollisesti matkan puolivälissä huiputetaan Halti ja sitten suunnataan samat 55 kilometriä takaisin. Reitin varrelle osuvat Saanatunturi, Saivaara sekä upea Pihtsusköngäs-putous.\n\n110 kilometrin vaeltamiseen kannattaa varata kokonainen viikko, vaikka maasto onkin pääosin yllättävänkin helppokulkuista. Muista kuitenkin, että erämaassa matkapuhelin ei välttämättä kunnolla toimi, joten musita pitää kartta ja kompassi mukanasi.\n\nAlueella on usein vielä runsaasti lunta touko-kesäkuussa, joten Haltin vaellusreitti suositella suoritettavaksi heinäkuun alun ja syyskuun alkupuoliskon välisenä aikana. Reitin varrella on autiotupia, joissa voi myös yöpyä.",
-      "coord": "[69.2853282671778, 21.26888751983643]"
+      "latitude": "69.2853282671778",
+      "longitude": "21.26888751983643"
     },
     {
       "Route": "Kevon reitti",
@@ -29,7 +32,8 @@
       "Difficulty": "Keskipitkä (Ei sovi aloittelijoille)",
       "Location": "Sulaoja",
       "Description": "Kevon reitti on 63 kilometrin mittainen vaellus Kevon luonnonpuistossa. Tämä vaellusreitti pistää kropan ajoittain todella koville, sillä se nousee ja laskee rokolaakson rinteitä useaan otteeseen ylös ja alas. Kevojokikin ylitetään reitillä huimat 3 kertaa - ja tietysti kahlaamalla. Skinnersit ovat hyvä valinta reitille mukaan, koska vesistöjen ylitys käy niiden kanssa vaivatta ja vaelluskengät pysyvät kuivina. Näiden 63 kilometrin vaeltamiseen kannattaa varata useampi päivä.\n\nMuistathan, että Kevon luonnonpuistoissa liikkuminen on rajoitettua ja siksi vaeltaminen ja telttailu on sallittua vain merkityillä paikoilla.\n\nHUOM! Kevon reitti ei ole aloittelijoille! Muista valmistautua vaellukseen hyvin ja kanna mukanasi riittävästi ruokaa ja juomaa.",
-      "coord": "[69.588956, 26.732037]"
+      "latitude": "69.588956",
+      "longitude": "26.732037"
     },
     {
       "Route": "Sevettijärvi-Pulmanki -reitti",
@@ -37,7 +41,8 @@
       "Difficulty": "Pitkä (Ei sovi aloittelijoille)",
       "Location": "Pulmankijärvi",
       "Description": "Kaldoaivin erämaan poikki kulkeva, reittivalinnasta riippuen noin 60-70 kilometriä pitkä Sevettijärvi-Pulmanki -vaellusreitti on täydellinen valinta hiljaisuutta kaipaavalle. Kaukana kaikesta sijaitseva Kaldoaivin erämaa-alue on yksi Suomen pohjoisimmista kolkista. Jos kuljet reitin etelästä pohjoiseen, kohtaat ensin mäntykankaita. Pikkuhiljaa ympäristö muuttuu karummaksi ja vaivaiskoivu valtaa alaa. Rauhallisen tunturimaiseman hiljaisuuden rikkovat vain purojen ja jokien solina.\n\nParas reitti vaeltamiseen on noin juhannuksesta lokakuun alkupuolelle asti. Huomaathan, että reitti on kokonaisuudessaan vaativa ja se sopii vain kokeneille vaeltajille.",
-      "coord": "[69.509506, 28.597540]"
+      "latitude": "69.509506",
+      "longitude": "28.597540"
     },
     {
       "Route": "Pyhä-Luoston reitti",
@@ -45,7 +50,8 @@
       "Difficulty": "Keskipitkä",
       "Location": "Pyhätunturi",
       "Description": "Nimensä mukaisesti Pyhä-Luoston kansallispuistossa kulkeva vaellusreitti on oiva yhdistelmä aarniometsää, rakkokivikkoja, suota ja suomalaista tunturimaisemaa. Tämä vaellusreitti sopii aloittelijoillekin ja siihen on hyvä varata noin 3-5 päivää. Reitin varrella on runsaasti autiotupia, joissa voi majoittua mukavasti. Reitin huippuhetkiä ovat Suomen syvin tunturikuru Isokuru, ametistikaivos ja Ukko-Luoston valloitus.",
-      "coord": "[67.019288, 27.251926]"
+      "latitude": "67.019288",
+      "longitude": "27.251926"
     },
     {
       "Route": "Nuorttin retkeilyreitti",
@@ -53,7 +59,8 @@
       "Difficulty": "Keskivaikea",
       "Location": "Kuopio",
       "Description": "Urho Kekkosen kansallispuiston kaakkoisella reunalla virtaa Nuorttijoki, jonka molemmin puolin kulkee upea reitti - välillä korkealla törmän päällä, toisinaan aivan rantaviivaa pitkin ja osittain metsänkin keskellä. Kun kierrät Nuorttin reitin yhteen pötkään, toista reunaa eteepäin ja toista takaisin, tulee koko vaelluksen pituudeksi noin 40 kilometriä. Tästä noin 24 kilometriä vaelletaan joen pohjoispuolella ja 16 kilometriä eteläpuolella. Reitin varrella on autiotupia ja varaustupia, joissa voi yöpyä. Saunaan kaupaavan kannattaa tutustua Karhuojan tupaan, jossa on sekä autio- että varauspuoli. Nuorttijoen retkeilyreitin voi kävellä kumpaan suuntaan tahansa. Reitti on merkitty maastoon selvästi. Tavallisin aloituspaikka on Haukijärvenojan pysäköintialue, joka on noin 93 kilometrin päässä Savukoskelta. Merkitty reitti alkaa suoraa pysäköintialueelta.",
-      "coord": "[69.588956, 26.732037]"
+      "latitude": "69.588956",
+      "longitude": "26.732037"
     },
     {
       "Route": "Julma-Ölkky",
@@ -61,7 +68,8 @@
       "Difficulty": "Keskivaikea",
       "Location": "Kuopio",
       "Description": "Aina ei tarvitse vaeltaa päiväkausia päästäkseen upeiden maisemien äärelle! Hossan Julma-Ölkky on monelle hieman tuntemattomampi vaelluskohde, mutta ehdottomasti vierailun arvoinen. 10 kilometrin mittainen Ölökyn Ähkäsy kiertää pitkin upean Julma-Ölkyn kanjonijärven rantoja. Vaikka matkaan voivat lähteä kaikki aloittelijoista konkareihin, ei kyseessä ole mikään leppoisa iltapäiväkävely: reitti on paikoin vaativaa ja hidaskulkuista kivikkoa.\n\nJos 10 kilometriä tuntuu turhan pitkältä, pääset ylittämään järven puolivälistä riippusiltaa pitkin. Puolikkaan reitin mitta on luonnollisesti 5 kilometriä. Vaellusreitti alkaa parkkipaikalta, jolle pääset pitkin hidasta ja kivistä hiekkatietä.",
-      "coord": "[65.537177, 29.324120]"
+      "latitude": "65.537177",
+      "longitude": "29.324120"
     },
     {
       "Route": "Nuuksion Haukankierros",
@@ -69,7 +77,8 @@
       "Difficulty": "Keskivaikea",
       "Location": "Kuopio",
       "Description": "Nuuksion kansallispuistossa on runsaasti reittejä, joista Haukankierros on nimekkäin. Täällä pärjäät ihan lenkkareillakin ja vaelluskengät eivät ole pakollinen varuste! Reitin pituus on noin 4 kilometriä, joten aikaa vaellukseen menee noin 1,5 - 2,5 tuntia. Vaikka ollaankin etelässä, on reitillä nousujakin, joten voit halutessasi saada pienen hienkin pintaan. Yksi reitin huippuhetkistä on vierailu Mustalammen rannalla, jossa moni pysähtyy nauttimaan eväitään.",
-      "coord": "[60.32728, 24.4935]"
+      "latitude": "60.32728",
+      "longitude": "24.4935"
     },
     {
       "Route": "Seitseminen",
@@ -77,6 +86,7 @@
       "Difficulty": "Keskivaikea",
       "Location": "Kuopio",
       "Description": "Ei etelänmiehenkään tarvitse lähteä merta edemmäs kalaan! Tai tässä tapauksessa Pirkanmaata pidemmälle vaeltaakseen. Seitsemisen saloseudut ovat suomalaisten retkeilymaastojen aatelia. Täällä reittivalikoimaa on aina 1,8 kilometrin mittaisesta Multiharjun Aarnipolusta 18,8 kilometrin Seitaskierrokseen sekä 25,9 kilometrin Virkatiehen asti. Kun maa on sula, kuluu Virkatien reittiinkin vain noin 10 tuntia. Yhden yön reissua kaupaava voi kuitenkin vuokrata majoituksen vaikkapa Pitkäjärven savottakämpältä.\n\nAlueen pisin merkitty reitti, Virkatie, lähtee Kulomäeltä ja kulkee Seitsemisharjua myöden etelää kohti. Vaellusreitin varrella tutustut Pitkäjärven metsätyökämppään, vanhaan myllyyn, Koveron perinnetilaan ja tietysti Multiharjun aarnimetsään. Reitillä on laavuja ja kuivakäymälöitä. Huomaathan kuitenkin, että Pitkäjärven tulentekopaikka ja kauivakäymälä ovat vain vuokralaisten käytössä.",
-      "coord": "[60.32728, 24.4935]"
+      "latitude": "60.32728",
+      "longitude": "24.4935"
     }
 ]

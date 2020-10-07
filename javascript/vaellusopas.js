@@ -40,7 +40,7 @@ if (document.URL.includes("ohjeet.html")){
     const nappi = document.querySelector('.nappi');
 
     nappi.addEventListener('click', function() {
-        var paiva = document.querySelector('#vesi').value;
+        let paiva = document.querySelector('#vesi').value;
 
         const select = document.getElementById("myDropdown");
         for(let i = 0;i < select.options.length;i++){
@@ -81,8 +81,6 @@ if (document.URL.includes("ohjeet.html")){
         maximumAge: 0
     };
 
-
-
         // Funktio, joka ajetaan, kun paikkatiedot on haettu
         function success(pos) {
             const crd = pos.coords;
@@ -100,69 +98,68 @@ if (document.URL.includes("ohjeet.html")){
             }).addTo(map);
 
 
-            crd.latitude
-            L.Routing.control({
-                waypoints: [
-                    L.latLng(crd.latitude, crd.longitude),
-                    L.latLng(60.3209, 24.598)
-                ],
-                routeWhileDragging: true
-                }).addTo(map);
 
-            let nuuksio = L.circle([60.32728, 24.4935], {
-                color: 'red',
-                fillColor: '#03',
-                fillOpacity: 0.7,
-                radius: 2000
-            }).addTo(map);
-            nuuksio.bindPopup("<p> Nuuksion kansallispuisto</p>");
+            let jsonResult = result();
+            async function result(){
+                //search = q+keyword;
+                //resultList.innerHTML = "";
 
-            let marker = L.marker([60.28, 24.70]).addTo(map);
-            marker.bindPopup("<p> Hey you!</p>").openPopup();
-
-            let karhunKierros = L.circle([66.269, 26.4044], {
-                color: 'red',
-                fillColor: '#03',
-                fillOpacity: 0.7,
-                radius: 2000
-            }).addTo(map);
-            karhunKierros.bindPopup("<p> Karhunkierros </p>");
-
-            let haltinVaellus = L.circle([69.2853282671778, 21.26888751983643], {
-                color: 'red',
-                fillColor: '#03',
-                fillOpacity: 0.7,
-                radius: 2000
-            }).addTo(map);
-
-            let kevonReitti = L.circle([69.588956, 26.732037], {
-                color: 'red',
-                fillColor: '#03',
-                fillOpacity: 0.7,
-                radius: 2000
-            }).addTo(map);
+                try{
+                    const vastaus = await fetch("json/routes.json");
+                    if(!vastaus.ok) throw new Error('Jokin meni pieleen.');
+                    const arr = await vastaus.json();
+                    arr.forEach(funct);
+                }catch(error){
+                    console.log(error);
+                }
+            }
+            function funct(item) {
+                console.log(item.longitude + " " + item.latitude);
+                    L.marker([item.latitude, item.longitude], {
+                        draggable: true
+                    }).addTo(map);
+            }
 
 
-            L.circle([69.509506, 28.597540], {
-                color: 'red',
-                fillColor: '#03',
-                fillOpacity: 0.7,
-                radius: 2000
-            }).addTo(map);
 
-            let pyhaLuosto = L.circle([67.019288, 27.251926], {
-                color: 'red',
-                fillColor: '#03',
-                fillOpacity: 0.6,
-                radius: 2000
-            }).addTo(map);
+            let marker;
 
-            map.on('click', function (e) {
-                var coord = e.latlng;
-                var lat = coord.lat;
-                var lng = coord.lng;
-                console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
+
+
+            map.on('contextmenu', function(){
+                if (marker !== null) {
+                    removeRoutingControl();
+                }
             });
+
+
+            map.on('click', mapClicked);
+
+            function mapClicked(e) {
+
+
+                if (marker != null) {
+                    removeRoutingControl();
+                }
+                let koordinaatit = e.latlng;
+                let lat = koordinaatit.lat;
+                let lng = koordinaatit.lng;
+                console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
+                marker = L.Routing.control({
+                    waypoints: [
+                        L.latLng(crd.latitude, crd.longitude),
+                        L.latLng(lat, lng)
+                    ],
+                    routeWhileDragging: true
+                }).addTo(map);
+            }
+
+            let removeRoutingControl = function () {
+                if (marker != null) {
+                    map.removeControl(marker);
+                    marker = null;
+                }
+            }
 
             L.marker([crd.latitude, crd.longitude]).addTo(map)
                 .bindPopup('Olen tässä.')
