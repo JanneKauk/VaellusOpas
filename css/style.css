@@ -155,7 +155,7 @@ iframe {
   height: 40rem;
   max-height: 30rem;
   position: relative;
-  margin-bottom: 0rem; }
+  margin-bottom: 0; }
   .header__image {
     height: 40rem;
     max-height: 30rem;
