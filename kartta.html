@@ -7,6 +7,8 @@
     <link rel="icon" href="img/vaelluslogo.svg" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/leaflet-routing-machine.css">
 </head>
 
 <body>
@@ -37,7 +39,8 @@
     <section class="section-laatikko">
         <div class="ohje-box">
         <aside class="map-box">
-            <h1>Vasemmalla hiiren klikkauksella reitti omasta sijainnista. Oikealla hiiren klikkauksella voi poistaa markerin</h1>
+            <h1>Vasemmalla hiiren klikkauksella tulee reitti Karamalmilta klikattuun kohtaan. <br />
+                Voi myös raahata kumpaakin markeria. Oikealla hiiren klikkauksella voi poistaa markerin</h1>
             <article class="map-box__content">
                 <figure class="map-container">
                     <div id="map" ></div>
@@ -47,6 +50,7 @@
         </div>
     </section>
 </main>
+
 
 <footer class="footer">
     <figure class="footer__image"></figure>
@@ -62,6 +66,8 @@
         <p>&copy; 2020 Team Cyber. All Rights Reserved.</p>
     </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
+<script src="javascript/leaflet-routing-machine.js"></script>
 <script src="javascript/vaellusopas.js"></script>
 </body>
 </html>
