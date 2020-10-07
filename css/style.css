@@ -162,7 +162,7 @@ iframe {
     position: absolute;
     width: 100%;
     margin-bottom: 10rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
     /*@media only screen and (min-width: 640px) {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
     }*/
@@ -299,78 +299,123 @@ iframe {
   position: fixed; }
 
 .footer {
-  background-color: #cacbcf;
-  width: 100%;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-  margin-top: 5rem; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  position: relative; }
+  .footer__image {
+    height: 20rem;
+    z-index: -1;
+    background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko_small.jpg");
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    width: 100%; }
 
-.footer-text {
-  text-align: center;
-  margin-bottom: 2rem;
+.footer__logo-container {
+  position: center; }
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%; }
+
+.footer-nav button {
+  color: #ece7ff;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer; }
+
+.copyright {
+  margin: 1rem; }
+
+.main-home {
+  height: auto;
+  min-height: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding: 10rem 0;
+  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+  background-image: linear-gradient(to right, rgba(187, 231, 178, 0.9), rgba(11, 121, 11, 0.7)); }
+  @media screen and (max-width: 60rem) {
+    .main-home {
+      height: 95vh; } }
+
+.main-home figure {
   font-size: 3rem;
+  text-align: center;
+  color: #ece7ff;
+  z-index: 10002; }
+
+.main-home iframe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 1rem;
+  height: 70vh;
+  width: 80%;
+  border-radius: 30px;
+  box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.makers {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  margin-top: 1rem; }
+
+.makers-text {
+  text-align: center;
+  font-size: 2rem;
   color: black; }
 
 .image-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  min-height: 15vh; }
+  min-height: 10vh; }
 
 .image-box img {
-  width: 10rem;
-  height: 10rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%; }
 
 .image-box figure {
-  width: 20rem;
-  height: 20rem;
-  font-size: 2rem;
+  width: 15rem;
+  height: 15rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
 
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 48rem) {
   .image-box {
     display: flex;
     flex-direction: column;
     justify-content: center; }
   .image-box figure {
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem; }
+    font-size: 1rem; }
   .image-box img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%; } }
-
-.main-home {
-  height: 90vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding: 10rem 0;
-  margin-bottom: 1rem;
-  clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 93%);
-  background-image: linear-gradient(to right, rgba(187, 231, 178, 0.9), rgba(11, 121, 11, 0.7)); }
-  @media screen and (max-width: 60rem) {
-    .main-home {
-      height: 95vh;
-      clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 97%); } }
-
-.section-about {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: #7bd078;
-  padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(163, 238, 163, 0.8), rgba(9, 134, 9, 0.8)), url(../../img/IMG_20200910_092605.jpg);
-  background-size: cover; }
 
 .main {
   display: flex;

@@ -1,60 +1,48 @@
 .footer {
-  background-color: #cacbcf;
-  width: 100%;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  position: relative;
+
+  &__image {
+    height: 20rem;
+    z-index: -1;
+    background-image: linear-gradient(
+                    to right,
+                    rgba(187, 231, 178, 0.8),
+                    rgba(#0b790b, 0.8)),
+    url("../img/metsakko_small.jpg");
+    background-size: cover;
+    background-position: top;
+    position: absolute;
+    width: 100%;
+  }
 }
 
-.footer-text {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 3rem;
-  color: black;
+.footer__logo-container {
+  position: center;
 }
 
-.image-box {
+.footer-nav  {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 15vh;
+  width: 40%;
 }
 
-.image-box img {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
+.footer-nav button {
+  color: #ece7ff;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.image-box figure {
-  width: 20rem;
-  height: 20rem;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.copyright {
+  margin: 1rem;
 }
 
-@media screen and (max-width: 60rem) {
-  .image-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .image-box figure {
-    width: 20rem;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 2rem;
-  }
-
-  .image-box img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-  }
-}
