@@ -4,12 +4,14 @@
   height: auto;
   position: relative;
   justify-content: center;
-  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 .main div{
   width: 70%;
-  background-color: #00000008;
+  background: white;
   box-shadow: 0 0.2rem 4rem rgba(black, .15);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   padding: 5rem 7rem 5rem 7rem;
   @media screen and (min-width: 650px) and (max-width: 1000px) {
@@ -30,6 +32,7 @@
     margin-bottom: 2rem;
     font-size: 3rem;
     line-height: 80%;
+    color: #1fbf1a;
     @media only screen and (min-width: 1950px) {
       font-size: 5rem;
     }
@@ -38,6 +41,9 @@
     width: 100%;
     margin-bottom: 5rem;
     font-size: 2rem;
+    h3{
+      color: #1fbf1a;
+    }
     p{
       margin-top: 2rem;
     }
@@ -59,4 +65,15 @@
                   rgba(#098609, 0.8)),
   url(../../img/IMG_20200910_092605.jpg);
   background-size: cover;
+}
+
+.ohje-box-reitit{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(to right, rgba(187, 231, 178, 0.9), rgba(11, 121, 11, 0.7));
+  clip-path: polygon(0 0, 100% 0.73%, 100% 100%, 0 99.27%);
 }

@@ -4,7 +4,8 @@
   font-size: medium;
   padding: 3rem;
   margin-bottom: 5rem;
-  border-bottom-style: inset;
+  border-bottom-style: groove;
+  border-color: lightblue;
 
   &__reitti-kuva{
     background-color: rgba(white, 0.82);

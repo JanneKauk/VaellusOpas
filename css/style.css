@@ -93,7 +93,8 @@ iframe {
   font-size: medium;
   padding: 3rem;
   margin-bottom: 5rem;
-  border-bottom-style: inset; }
+  border-bottom-style: groove;
+  border-color: lightblue; }
   .reitti-box__reitti-kuva {
     background-color: rgba(255, 255, 255, 0.82);
     margin-top: 0.7rem;
@@ -187,7 +188,8 @@ iframe {
       font-size: 6rem;
       width: fit-content;
       font-weight: 100;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-shadow: -1px 1px 4px black; }
   .header__container {
     position: absolute;
     top: 40%;
@@ -226,7 +228,8 @@ iframe {
   text-transform: uppercase;
   z-index: 10001;
   transition: all 0.2s ease-out;
-  cursor: pointer; }
+  cursor: pointer;
+  text-shadow: -1px 1px 4px black; }
 
 .buttons button:hover {
   transform: scale(1.25); }
@@ -453,12 +456,14 @@ iframe {
   height: auto;
   position: relative;
   justify-content: center;
-  margin-top: 5rem; }
+  margin-bottom: 5rem; }
 
 .main div {
   width: 70%;
-  background-color: #00000008;
+  background: white;
   box-shadow: 0 0.2rem 4rem rgba(0, 0, 0, 0.15);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 5rem 7rem 5rem 7rem; }
   @media screen and (min-width: 650px) and (max-width: 1000px) {
     .main div {
@@ -476,7 +481,8 @@ iframe {
     width: 100%;
     margin-bottom: 2rem;
     font-size: 3rem;
-    line-height: 80%; }
+    line-height: 80%;
+    color: #1fbf1a; }
     @media only screen and (min-width: 1950px) {
       .main div h2 {
         font-size: 5rem; } }
@@ -484,6 +490,8 @@ iframe {
     width: 100%;
     margin-bottom: 5rem;
     font-size: 2rem; }
+    .main div span h3 {
+      color: #1fbf1a; }
     .main div span p {
       margin-top: 2rem; }
     @media only screen and (min-width: 1950px) {
@@ -498,6 +506,16 @@ iframe {
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(163, 238, 163, 0.8), rgba(9, 134, 9, 0.8)), url(../../img/IMG_20200910_092605.jpg);
   background-size: cover; }
+
+.ohje-box-reitit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(to right, rgba(187, 231, 178, 0.9), rgba(11, 121, 11, 0.7));
+  clip-path: polygon(0 0, 100% 0.73%, 100% 100%, 0 99.27%); }
 
 .section-laatikko {
   display: flex;
