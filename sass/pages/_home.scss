@@ -1,53 +1,79 @@
 .main-home {
-  height: auto;
-  min-height: 100vw;
-  position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  min-height: 250vh;
+  //background-color: white;
   padding: 10rem 0;
-  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
-  //background-color: #7bd078;
-  background-image: linear-gradient(
-                  to right,
-                  rgba(187, 231, 178, 0.9),
-                  rgba(#0b790b, 0.7));
-
+  //margin-bottom: 3rem;
+  clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 100%);
 
   @media screen and (max-width: 60rem) {
-    height: 95vh;
+    //height: 90vh;
+    clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 100%);
   }
+}
 
+.video {
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 
+.content {
+  position: relative;
+  bottom: 0;
+  min-height: 100vh;
+  color: white;
+  width: 100%;
+}
+
+#pause {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  top: 5rem;
+  right: 5rem;
 }
 
 .main-home figure {
+  width: 40%;
+  color: white;
   font-size: 3rem;
-  text-align: center;
-  color: #ece7ff;
-  z-index: 10002;
 }
 
-.main-home iframe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgba(#fff, 100);
-  padding: 1rem;
-  height: 70vh;
-  width: 80%;
-  border-radius: 30px;
-  box-shadow: 0 1.2rem 4rem rgba(black, .15);
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.first-paragraph {
+  position: absolute;
+  top: 25rem;
+  left: 5rem;
+  width: 40%;
+}
+
+.second-paragraph {
+  position: absolute;
+  bottom: 50%;
+  top: 50%;
+  right: 5rem;
+  width: 40%;
+}
+
+.third-paragraph {
+  position: absolute;
+  bottom: 25rem;
+  left: 5rem;
+  width: 40%;
 }
 
 .makers {
-  background-color: white;
+  position: relative;
+  background: transparent;
   width: 100%;
   height: auto;
-  margin-top: 1rem;
 }
 
 .makers-text {
@@ -64,14 +90,15 @@
 }
 
 .image-box img {
-  width: 5rem;
-  height: 5rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
 }
 
 .image-box figure {
   width: 15rem;
   height: 15rem;
+  margin: 5rem;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -80,16 +107,17 @@
 }
 
 @media screen and (max-width: 48rem) {
-  .image-box {
+  /*.image-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+  }*/
 
   .image-box figure {
     width: 10rem;
     height: 10rem;
     display: flex;
+    margin: 5rem;
     flex-direction: column;
     align-items: center;
     font-size: 1rem;
