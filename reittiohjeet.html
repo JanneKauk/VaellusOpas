@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <title>Vaellusopas</title>
+    <title>Kartta</title>
     <link rel="icon" href="img/vaelluslogo.svg" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -17,9 +17,9 @@
             <a href="index.html"><img src="img/vaelluslogo.svg" alt="" style="width: 100px; height: 100px"></a>
         </div>
         <ul class="buttons">
-            <li class="buttons__button btn1" style=""><a href="#"><button>REITIT</button></a></li>
+            <li class="buttons__button btn1" style=""><a href="reitit.html"><button>REITIT</button></a></li>
             <li class="buttons__button btn2" style=""><a href="ohjeet.html"><button>OHJEET</button></a></li>
-            <li class="buttons__button btn3" style=""><a href="reittiohjeet.html"><button>VARUSTEET</button></a></li>
+            <li class="buttons__button btn3" style=""><a href="#"><button>VARUSTEET</button></a></li>
         </ul>
         <div class="hamburger">
             <div class="line1"></div>
@@ -28,36 +28,26 @@
         </div>
     </nav>
     <div class="h1_container">
-        <h1>Suomen suosituimmat vaellusreitit</h1>
+        <h1>Katso mistä reitit alkavat</h1>
     </div>
 </header>
 
 
-<main class="main">
-    <section class="ohje-box-reitit">
-        <div>
-            <article class="reitti-box">
-                <h2><b>Karhunkierros</b><br></h2>
-                <img class="reitti-box__reitti-kuva" src="img/kartta_placeholder.PNG" alt="kartta">
-                <span>
-                <h3><b>Sijainti: Lappi<br>Haastavuus: Keskivaikea</b></h3>
-                <p>Description</p>
-            </span>
+<main>
+    <section class="section-laatikko">
+        <div class="ohje-box">
+        <aside class="map-box">
+            <h1>Vasemmalla hiiren klikkauksella reitti omasta sijainnista. Oikealla hiiren klikkauksella voi poistaa markerin</h1>
+            <article class="map-box__content">
+                <figure class="map-container">
+                    <div id="map" ></div>
+                </figure>
             </article>
+        </aside>
         </div>
     </section>
 </main>
-<!--<aside>
-    <section class="section-about">
-        <div class="info-box">
-            <h2 class="info-box__heading">testi</h2>
-            <p class="info-box__text">
-                Lorem ipsum
-            </p>
-        </div>
 
-    </section>
-</aside>-->
 <footer class="footer">
     <figure class="footer__image"></figure>
     <div class="footer__logo-container" style="width: fit-content;">
