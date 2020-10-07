@@ -22,11 +22,9 @@
     <list default="true" id="cd1245cb-1e12-4834-a399-2a1495df4f75" name="Default Changelist" comment="kartta sivu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/vaellusopas.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/vaellusopas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kartta.html" beforeDir="false" afterPath="$PROJECT_DIR$/kartta.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ohjeet.html" beforeDir="false" afterPath="$PROJECT_DIR$/ohjeet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reitit.html" beforeDir="false" afterPath="$PROJECT_DIR$/reitit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reittiohjeet.html" beforeDir="false" afterPath="$PROJECT_DIR$/kartta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/pages/_reittiohjeet.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/pages/_kartta.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +122,7 @@
       <workItem from="1601966441284" duration="5281000" />
       <workItem from="1602052885129" duration="8393000" />
       <workItem from="1602064096514" duration="19478000" />
-      <workItem from="1602100969522" duration="5473000" />
+      <workItem from="1602100969522" duration="5642000" />
     </task>
     <task id="LOCAL−00001" summary="Navbar muokattu ja lisätty hamburger">
       <created>1601454024142</created>
@@ -234,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602106077242</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="kartta sivu">
+      <created>1602106532324</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1602106532324</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,18 +443,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="58" width="900" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601448399760" />
-    <state x="501" y="285" key="Vcs.Push.Dialog.v2" timestamp="1602104813605">
+    <state x="501" y="285" key="Vcs.Push.Dialog.v2" timestamp="1602106541756">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="501" y="285" key="Vcs.Push.Dialog.v2/-3840.-349.2560.1413/0.0.2560.1400@0.0.2560.1400" timestamp="1602104813605" />
+    <state x="501" y="285" key="Vcs.Push.Dialog.v2/-3840.-349.2560.1413/0.0.2560.1400@0.0.2560.1400" timestamp="1602106541756" />
     <state x="282" y="183" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1601463530191" />
     <state x="301" y="168" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601898368398" />
     <state x="1816" y="238" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1602057272569" />
     <state x="282" y="201" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1601377040602" />
-    <state x="853" y="574" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602106082837">
+    <state x="853" y="574" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602106536997">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="853" y="574" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3840.-349.2560.1413/0.0.2560.1400@0.0.2560.1400" timestamp="1602106082837" />
+    <state x="853" y="574" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-3840.-349.2560.1413/0.0.2560.1400@0.0.2560.1400" timestamp="1602106536997" />
     <state x="512" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601898359779" />
     <state x="2080" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877/1440.23.1920.1057@1440.23.1920.1057" timestamp="1602083235930" />
     <state x="480" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1601377006515" />
