@@ -105,7 +105,7 @@ if(document.URL.includes("kartta.html")) {
 }
 
 //testi sivu
-if (document.URL.includes("ohjeet.html" || "kartta.html")){
+if (document.URL.includes("ohjeet.html")){
     if (document.URL.includes("ohjeet.html")) {
         const nappi = document.querySelector('.nappi');
 
