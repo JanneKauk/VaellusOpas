@@ -51,13 +51,13 @@ if (document.URL.includes("ohjeet.html")){
         if(paiva >= 0 && isFinite(paiva) && !isNaN(paiva)) {
             switch (select.value) {
                 case "Talvi":
-                    document.querySelector('.tulos').innerHTML = "Tarvitset n. " + paiva * 5 + " litraa vettä ja n. " + (paiva * 1.6).toFixed(2) + ' kg ruokaa ' + Math.floor(+paiva) + ":lle päivälle";
+                    document.querySelector('.tulos').innerHTML = "Tarvitset n. " + paiva * 3 + " litraa vettä ja n. " + (paiva * 1.6).toFixed(2) + ' kg ruokaa ' + Math.floor(+paiva) + ":lle päivälle";
                     break;
                 case "Kevät":
                     document.querySelector('.tulos').innerHTML = "Tarvitset n. " + paiva * 4 + " litraa vettä ja n. " + (paiva * 1.4).toFixed(2) + ' kg ruokaa ' + Math.floor(+paiva) + ":lle päivälle";
                     break;
                 case "Kesä":
-                    document.querySelector('.tulos').innerHTML = "Tarvitset n. " + paiva * 6 + " litraa vettä ja n. " + (paiva * 1.3).toFixed(2) + ' kg ruokaa ' + Math.floor(+paiva) + ":lle päivälle";
+                    document.querySelector('.tulos').innerHTML = "Tarvitset n. " + paiva * 5 + " litraa vettä ja n. " + (paiva * 1.3).toFixed(2) + ' kg ruokaa ' + Math.floor(+paiva) + ":lle päivälle";
                     break;
                 case "Syksy":
                     document.querySelector('.tulos').innerHTML = "Tarvitset n. " + paiva * 4 + " litraa vettä ja n. " + (paiva * 1.5).toFixed(2) + ' kg ruokaa ' + Math.floor(+paiva) + ":lle päivälle";
@@ -75,105 +75,74 @@ if (document.URL.includes("ohjeet.html")){
         }
     });
     // Asetukset paikkatiedon hakua varten (valinnainen)
-    const options = {
-        enableHighAccuracy: true,
-        timeout: 5000,
-        maximumAge: 0
-    };
+    const map = L.map('map').setView([60.2238, 24.7583], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
 
-        // Funktio, joka ajetaan, kun paikkatiedot on haettu
-        function success(pos) {
-            const crd = pos.coords;
-
-            // Tulostetaan paikkatiedot konsoliin
-            console.log('Your current position is:');
-            console.log(`Latitude : ${crd.latitude}`);
-            console.log(`Longitude: ${crd.longitude}`);
-            console.log(`More or less ${crd.accuracy} meters.`);
-
-            // Käytetään leaflet.js -kirjastoa näyttämään sijainti kartalla (https://leafletjs.com/)
-            const map = L.map('map').setView([crd.latitude, crd.longitude], 13);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-            }).addTo(map);
+    L
 
 
+    let jsonResult = result();
+    async function result(){
+        //search = q+keyword;
+        //resultList.innerHTML = "";
 
-            let jsonResult = result();
-            async function result(){
-                //search = q+keyword;
-                //resultList.innerHTML = "";
-
-                try{
-                    const vastaus = await fetch("json/routes.json");
-                    if(!vastaus.ok) throw new Error('Jokin meni pieleen.');
-                    const arr = await vastaus.json();
-                    arr.forEach(funct);
-                }catch(error){
-                    console.log(error);
-                }
-            }
-            function funct(item) {
-                console.log(item.longitude + " " + item.latitude);
-                    L.marker([item.latitude, item.longitude], {
-                        draggable: true
-                    }).addTo(map);
-            }
-
-
-
-            let marker;
-
-
-
-            map.on('contextmenu', function(){
-                if (marker !== null) {
-                    removeRoutingControl();
-                }
-            });
-
-
-            map.on('click', mapClicked);
-
-            function mapClicked(e) {
-
-
-                if (marker != null) {
-                    removeRoutingControl();
-                }
-                let koordinaatit = e.latlng;
-                let lat = koordinaatit.lat;
-                let lng = koordinaatit.lng;
-                console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
-                marker = L.Routing.control({
-                    waypoints: [
-                        L.latLng(crd.latitude, crd.longitude),
-                        L.latLng(lat, lng)
-                    ],
-                    routeWhileDragging: true
-                }).addTo(map);
-            }
-
-            let removeRoutingControl = function () {
-                if (marker != null) {
-                    map.removeControl(marker);
-                    marker = null;
-                }
-            }
-
-            L.marker([crd.latitude, crd.longitude]).addTo(map)
-                .bindPopup('Olen tässä.')
-                .openPopup();
+        try{
+            const vastaus = await fetch("json/routes.json");
+            if(!vastaus.ok) throw new Error('Jokin meni pieleen.');
+            const arr = await vastaus.json();
+            arr.forEach(funct);
+        }catch(error){
+            console.log(error);
         }
-
-
-    // Funktio, joka ajetaan, jos paikkatietojen hakemisessa tapahtuu virhe
-    function error(err) {
-        console.warn(`ERROR(${err.code}): ${err.message}`);
+    }
+    function funct(item) {
+        console.log(item.longitude + " " + item.latitude);
+        L.marker([item.latitude, item.longitude], {
+            draggable: true
+        }).addTo(map).bindPopup(item.Route);
     }
 
-    // Käynnistetään paikkatietojen haku
-    navigator.geolocation.getCurrentPosition(success, error, options);
+
+    let marker;
+
+
+    map.on('contextmenu', function(){
+        if (marker !== null) {
+            removeRoutingControl();
+        }
+    });
+
+
+    map.on('click', mapClicked);
+
+    function mapClicked(e) {
+
+
+        if (marker != null) {
+            removeRoutingControl();
+        }
+        let koordinaatit = e.latlng;
+        let lat = koordinaatit.lat;
+        let lng = koordinaatit.lng;
+        console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
+        marker = L.Routing.control({
+            waypoints: [
+                L.latLng(60.2238, 24.7583),
+                L.latLng(lat, lng)
+            ],
+            routeWhileDragging: true
+        }).addTo(map);
+    }
+
+    let removeRoutingControl = function () {
+        if (marker != null) {
+            map.removeControl(marker);
+            marker = null;
+        }
+    }
+
 
 }
 
