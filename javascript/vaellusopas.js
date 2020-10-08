@@ -33,65 +33,88 @@ if ( document.URL.includes("reitit.html") ) {
 
 if(document.URL.includes("kartta.html")) {
     // Asetukset paikkatiedon hakua varten (valinnainen)
-    const map = L.map('map').setView([60.2238, 24.7583], 13);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    }).addTo(map);
 
-    let jsonResult = result();
-    async function result(){
-        //search = q+keyword;
-        //resultList.innerHTML = "";
 
-        try{
-            const vastaus = await fetch("json/routes.json");
-            if(!vastaus.ok) throw new Error('Jokin meni pieleen.');
-            const arr = await vastaus.json();
-            arr.forEach(funct);
-        }catch(error){
-            console.log(error);
-        }
-    }
-    function funct(item) {
-        console.log(item.longitude + " " + item.latitude);
-        L.marker([item.latitude, item.longitude], {
-            draggable: true
-        }).addTo(map).bindPopup(item.Route);
-    }
+    const options = {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0
+    };
 
-    let marker;
+    function success(pos)
+    {
+        const crd = pos.coords;
 
-    map.on('contextmenu', function(){
-        if (marker !== null) {
-            removeRoutingControl();
-        }
-    });
-
-    map.on('click', mapClicked);
-
-    function mapClicked(e) {
-        if (marker != null) {
-            removeRoutingControl();
-        }
-        let koordinaatit = e.latlng;
-        let lat = koordinaatit.lat;
-        let lng = koordinaatit.lng;
-        console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
-        marker = L.Routing.control({
-            waypoints: [
-                L.latLng(60.2238, 24.7583),
-                L.latLng(lat, lng)
-            ],
-            routeWhileDragging: true
+        // Tulostetaan paikkatiedot konsoliin
+        console.log('Your current position is:');
+        console.log(`Latitude : ${crd.latitude}`);
+        console.log(`Longitude: ${crd.longitude}`);
+        console.log(`More or less ${crd.accuracy} meters.`);
+        let jsonResult = result();
+        const map = L.map('map').setView([crd.latitude, crd.longitude], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
-    }
 
-    let removeRoutingControl = function () {
-        if (marker != null) {
-            map.removeControl(marker);
-            marker = null;
+        async function result() {
+            //search = q+keyword;
+            //resultList.innerHTML = "";
+
+            try {
+                const vastaus = await fetch("json/routes.json");
+                if (!vastaus.ok) throw new Error('Jokin meni pieleen.');
+                const arr = await vastaus.json();
+                arr.forEach(funct);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        function funct(item) {
+            console.log(item.longitude + " " + item.latitude);
+            L.marker([item.latitude, item.longitude], {
+                draggable: true
+            }).addTo(map).bindPopup(item.Route);
+        }
+
+        let marker;
+
+        map.on('contextmenu', function () {
+            if (marker !== null) {
+                removeRoutingControl();
+            }
+        });
+
+        map.on('click', mapClicked);
+
+        function mapClicked(e) {
+            if (marker != null) {
+                removeRoutingControl();
+            }
+            let koordinaatit = e.latlng;
+            let lat = koordinaatit.lat;
+            let lng = koordinaatit.lng;
+            console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
+            marker = L.Routing.control({
+                waypoints: [
+                    L.latLng([crd.latitude, crd.longitude]),
+                    L.latLng(lat, lng)
+                ],
+                routeWhileDragging: true
+            }).addTo(map);
+        }
+
+        let removeRoutingControl = function () {
+            if (marker != null) {
+                map.removeControl(marker);
+                marker = null;
+            }
         }
     }
+    function error(err) {
+        console.warn(`ERROR(${err.code}): ${err.message}`);
+    }
+    navigator.geolocation.getCurrentPosition(success, error, options);
 }
 
 //testi sivu
@@ -100,8 +123,7 @@ if (document.URL.includes("ohjeet.html")){
         const nappi = document.querySelector('.nappi');
 
         nappi.addEventListener('click', function() {
-            //let paiva = document.querySelector('#vesi').value;
-
+            let newline = "<br>";
             const select = document.getElementById("myDropdown");
             for (let i = 0; i < select.options.length; i++) {
                 if (select.options[i].value === 3) {
@@ -118,28 +140,28 @@ if (document.URL.includes("ohjeet.html")){
                 switch (select.value) {
                     case "Talvi":
                         document.querySelector(
-                            '.tulos').innerHTML = "Vettä: " + luku.value * 3 +
-                            " ruokaa: " + (luku.value * 1.6).toFixed(2) +
-                            ' kg  ' + Math.floor(+luku.value).toFixed(2);
+                            '.tulos').innerHTML = "Tarvitset vettä n. " + luku.value * 3 +
+                            " litraa ja ruokaa n. " + (luku.value * 1.6).toFixed(2) +
+                            ' kg  ';
 
                         break;
                     case "Kevät":
                         document.querySelector(
-                            '.tulos').innerHTML = "Vettä: " + luku.value * 4 +
-                            " ruokaa: " + (luku.value * 1.4).toFixed(2) +
-                            ' kg ' + Math.floor(+luku.value).toFixed(2);
+                            '.tulos').innerHTML = "Tarvitset vettä n. " + luku.value * 4 +
+                            " litraa ja ruokaa n. " + (luku.value * 1.4).toFixed(2) +
+                            ' kg ';
                         break;
                     case "Kesä":
                         document.querySelector(
-                            '.tulos').innerHTML = "Vettä: " + luku.value * 5 +
-                            " ruokaa: " + (luku.value * 1.3).toFixed(2) +
-                            ' kg ' + Math.floor(+luku.value).toFixed(2);
+                            '.tulos').innerHTML = "Tarvitset vettä n. " + luku.value * 5 +
+                            " litraa ja ruokaa n. " + (luku.value * 1.3).toFixed(2) +
+                            ' kg ';
                         break;
                     case "Syksy":
                         document.querySelector(
-                            '.tulos').innerHTML = "Vettä: " + luku.value * 4 +
-                            " ruokaa: " + (luku.value * 1.5).toFixed(2) +
-                            ' kg' + Math.floor(+luku.value).toFixed(2);
+                            '.tulos').innerHTML = "Tarvitset vettä n. " + luku.value * 4 +
+                            " litraa ja ruokaa n. " + (luku.value * 1.5).toFixed(2) +
+                            'kg';
                         break;
                 }
             } else {
