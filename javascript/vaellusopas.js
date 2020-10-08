@@ -196,20 +196,6 @@ const navOpen = () => {
 
 navOpen();
 
-//Etusivun videon scriptit
-
-
-function pause() {
-    const video = document.querySelector('video');
-
-    if(video.paused) {
-        video.play();
-    }
-    else {
-        video.pause();
-    }
-
-}
 
 
 
