@@ -18,7 +18,6 @@
     //height: 90vh;
     //clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 97%);
   }
-
 }
 
 .ohje-box {
@@ -40,10 +39,6 @@
   @media screen and (max-width: 60rem) {
     width: 100vw;
   }
-
-
-
-
 
   &__heading {
     font-size: 4rem;
@@ -77,7 +72,6 @@
     margin-bottom: 3rem;
     width: 100%;
 
-
   }
   &__text {
     font-size: 2rem;
@@ -87,10 +81,9 @@
     @media screen and (max-width: 60rem) {
       font-size: 1.2rem;
       margin: 2rem 0 3rem 0;
-  }
+    }
   }
   &__luettelo {
-
     list-style-position: inside;
     display: inline-flex;
     flex-direction: column;
@@ -102,7 +95,6 @@
       width: 60vw;
       font-size: 1rem;
     }
-
 
     &__items {
       text-align: center;
@@ -120,108 +112,75 @@
   border-color: lightblue;
 }
 
-
-
 .dropdown-content {
-
   background-color: #f1f1f1;
-  min-width: 8rem;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0,0,0,0.2);
   z-index: 1;
+  margin-right: 1rem;
 }
-
-
-
 
 #myDropdown {
   border-style: double;
   border-color: #8bcf8b;
   background-color: #4CAF50;
   color: white;
-  width: 20%;
-  margin-right: 2%;
-  @media screen and (max-width: 60rem) {
-    min-width: 30%;
-    max-width: 30%;
-
-  }
-
-
 }
 #myDropdown2 {
   border-style: double;
   border-color: #8bcf8b;
   background-color: #4CAF50;
   color: white;
-  width: 20%;
-  margin-right: 10%;
   @media screen and (max-width: 60rem) {
-    min-width: 30%;
-    max-width: 30%;
 
   }
-
-
 }
 
 .nappi {
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 1.5rem 3rem;
-  margin: 0.5rem;
-  margin-left: -2%;
-  margin-right: 10%;
+  padding: 0 2.4rem;
+
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.6rem;
-  max-width: 33%;
-  min-width: 20%;
 
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0,0,0,0.2);
   @media screen and (max-width: 60rem) {
-    min-width: 20%;
-    max-width: 20%;
-    font-size: 1rem;
+    font-size: 1.6rem;
+    padding: 0 1rem;
   }
 }
 .laskuri {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  border-style: groove;
+  margin: 2rem 12rem 5rem 12rem;
+
+  @media screen and (max-width: 60rem) {
+    margin: 0;
+  }
 }
-
-
 
 .tulos {
   font-size: 2rem;
+  width: 100%;
+  text-align: start;
+  margin-bottom: 10rem;
 }
 
 .selectdiv {
-  //width: 8vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   position: relative;
-  float: left;
-  //min-width: 7vw;
-  width: 100vw;
-  margin: 1rem 15%;
-
-
-
+  width: fit-content;
+  min-width: 350px;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: 60rem) {
-    //width: 9vw;
-    min-width: 100%;
-    margin: 1rem 41vw;
+
   }
 
   :after {
@@ -231,10 +190,7 @@
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    right: 1rem;
 
-    top: 1.8rem;
-    padding: 0 0 0.2rem;
     border-bottom: 0.1rem solid #999;
     /*left line */
 
@@ -253,11 +209,8 @@ select::-ms-expand {
   appearance: none;
 
   display: block;
-  width: 100%;
   max-width: 32rem;
   height: 50px;
-  float: right;
-  margin: 0.5rem 0;
   padding: 0 2.4rem;
   font-size: 1.6rem;
   line-height: 1.75;
@@ -266,4 +219,7 @@ select::-ms-expand {
   background-image: none;
   border: 1px solid #cccccc;
   word-break: normal;
+  @media screen and (max-width: 60rem) {
+    padding: 0 1rem;
+  }
 }
