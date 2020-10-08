@@ -209,6 +209,9 @@ iframe {
   width: auto;
   height: auto;
   list-style-type: none; }
+  .buttons a {
+    text-decoration: none;
+    color: #ece7ff; }
 
 .buttons li {
   margin-right: 5rem; }
@@ -334,7 +337,11 @@ iframe {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40%; }
+  width: 40%;
+  font-size: 1.5rem; }
+  .footer-nav a {
+    color: #ece7ff;
+    text-decoration: none; }
 
 .footer-nav button {
   color: #ece7ff;
@@ -498,17 +505,20 @@ iframe {
     @media only screen and (min-width: 1950px) {
       .main div h2 {
         font-size: 5rem; } }
-  .main div span {
-    width: 100%;
-    margin-bottom: 5rem;
-    font-size: 2rem; }
-    .main div span h3 {
-      color: #1fbf1a; }
-    .main div span p {
-      margin-top: 2rem; }
-    @media only screen and (min-width: 1950px) {
-      .main div span {
-        font-size: 3rem; } }
+
+.main div .reitti-box article {
+  width: 100%;
+  margin-bottom: 5rem;
+  font-size: 2rem; }
+  @media only screen and (min-width: 1950px) {
+    .main div .reitti-box article {
+      font-size: 3rem; } }
+
+.main div .reitti-box h3 {
+  color: #1fbf1a; }
+
+.main div .reitti-box p {
+  margin-top: 2rem; }
 
 .section-about {
   display: flex;

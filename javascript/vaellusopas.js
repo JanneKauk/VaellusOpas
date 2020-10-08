@@ -1,4 +1,12 @@
 'use strict';
+//Nav
+let reittibutton = document.querySelector(".btn1");
+let ohjeetbutton = document.querySelector(".btn2");
+let karttabutton = document.querySelector(".btn3");
+reittibutton.addEventListener("click", function(){window.location.href = 'reitit.html';})
+ohjeetbutton.addEventListener("click", function(){window.location.href = 'ohjeet.html';})
+karttabutton.addEventListener("click", function(){window.location.href = 'kartta.html';})
+
 //reitti sivu
 if ( document.URL.includes("reitit.html") ) {
     //Haetaan article elementin sisältö talteen ja viittaus div elementtiin, div tyhjennetään uutta sisältöä varten.
