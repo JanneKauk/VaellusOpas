@@ -256,7 +256,6 @@ iframe {
     position: fixed;
     top: 0;
     right: 0;
-    height: 10%;
     width: 100vw;
     background-color: #7bd078;
     display: flex;
