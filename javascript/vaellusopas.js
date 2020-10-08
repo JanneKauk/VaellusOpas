@@ -1,25 +1,24 @@
 'use strict';
 //reitti sivu
 if ( document.URL.includes("reitit.html") ) {
+    //Haetaan article elementin sisältö talteen ja viittaus div elementtiin, div tyhjennetään uutta sisältöä varten.
     const article = document.querySelector("article"), div = document.querySelector("main div");
     document.querySelector("main div").innerHTML = "";
-
-    let r = results();
+    let promise = results();
 
     async function results(){
-        //search = q+keyword;
-        //resultList.innerHTML = "";
-
         try{
+            //Haetaan reitit ja asetetaan ne taulukkoon
             const vastaus = await fetch("json/routes.json");
             if(!vastaus.ok) throw new Error('Jokin meni pieleen.');
             const arr = await vastaus.json();
+            //Jokaista kohtaa kohden luodaan article elementti, johon syötetään tallennettu article rakenne ja taulukon data
             arr.forEach(func);
         }catch(error){
             console.log(error);
         }
     }
-
+    //Luo taulukon perusteella elementit sivulle
     function func(item, index){
         let newElement = document.createElement("article");
         newElement.innerHTML = article.innerHTML;
@@ -29,7 +28,6 @@ if ( document.URL.includes("reitit.html") ) {
         newElement.querySelector("img").src = item.img;
         newElement.querySelector("h3 b").innerHTML = `Lähtöpiste: ${item.Location}<br>Pituus: ${item.Difficulty}`;
         newElement.querySelector("p").innerText = item.Description;
-
     }
 }
 
