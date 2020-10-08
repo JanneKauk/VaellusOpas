@@ -63,6 +63,7 @@
   background: transparent;
   width: 100%;
   height: auto;
+  padding: 3rem;
 }
 
 .makers-text {
@@ -75,24 +76,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 10vh;
-}
-
-.image-box img {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-}
-
-.image-box figure {
-  width: 15rem;
-  height: 15rem;
-  margin: 5rem;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 20rem;
+  &__images{
+    width: 15rem;
+    height: 15rem;
+    margin: 0 5rem 0 5rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (min-width: 40rem){
+        transform: scale(1.5);
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        margin: 0 5rem 0 5rem;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+  }
+  &__kuva{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    @media only screen and (min-width: 40rem){
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+    }
+  }
+  &__caption{
+    min-width: 10rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 80rem){
@@ -117,22 +136,4 @@
   }
 }
 
-@media only screen and (min-width: 40rem){
 
-
-  .image-box figure {
-    width: 10rem;
-    height: 10rem;
-    display: flex;
-    margin: 5rem;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1rem;
-  }
-
-  .image-box img {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-  }
-}
