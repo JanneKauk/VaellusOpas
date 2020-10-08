@@ -71,7 +71,6 @@ if(document.URL.includes("kartta.html")) {
         }
 
         function funct(item) {
-            console.log(item.longitude + " " + item.latitude);
             L.marker([item.latitude, item.longitude], {
                 draggable: true
             }).addTo(map).bindPopup(item.Route);
@@ -123,7 +122,6 @@ if (document.URL.includes("ohjeet.html")){
         const nappi = document.querySelector('.nappi');
 
         nappi.addEventListener('click', function() {
-            let newline = "<br>";
             const select = document.getElementById("myDropdown");
             for (let i = 0; i < select.options.length; i++) {
                 if (select.options[i].value === 3) {

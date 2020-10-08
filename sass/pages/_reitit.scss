@@ -37,20 +37,22 @@
       font-size: 5rem;
     }
   }
-  span {
-    width: 100%;
-    margin-bottom: 5rem;
-    font-size: 2rem;
-    h3{
-      color: #1fbf1a;
-    }
-    p{
-      margin-top: 2rem;
-    }
-    @media only screen and (min-width: 1950px) {
-      font-size: 3rem;
-    }
+}
+
+.main div .reitti-box article {
+  width: 100%;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+
+  @media only screen and (min-width: 1950px) {
+    font-size: 3rem;
   }
+}
+.main div .reitti-box h3 {
+  color: #1fbf1a;
+}
+.main div .reitti-box p {
+  margin-top: 2rem;
 }
 
 .section-about {
