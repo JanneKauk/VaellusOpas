@@ -125,7 +125,11 @@ iframe {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-size: 2rem; }
+  @media screen and (max-width: 60rem) {
+    .map-box {
+      margin: 0; } }
   .map-box__content {
     width: 70%; }
 
@@ -155,7 +159,7 @@ iframe {
   height: 40rem;
   max-height: 30rem;
   position: relative;
-  margin-bottom: 0rem; }
+  margin-bottom: 0; }
   .header__image {
     height: 40rem;
     max-height: 30rem;
@@ -166,14 +170,7 @@ iframe {
     position: absolute;
     width: 100%;
     margin-bottom: 10rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-    /*@media only screen and (min-width: 640px) {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
-    }*/
-    /*@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
-    }*/ }
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%); }
     @media only screen and (max-width: 50rem) {
       .header__image {
         background-image: linear-gradient(to right, rgba(187, 231, 178, 0.8), rgba(11, 121, 11, 0.8)), url("../img/metsakko.jpg"); } }
@@ -191,6 +188,9 @@ iframe {
       font-weight: 100;
       text-transform: uppercase;
       text-shadow: -1px 1px 4px black; }
+      @media screen and (max-width: 60rem) {
+        .header .h1_container h1 {
+          font-size: 3.5rem; } }
   .header__container {
     position: absolute;
     top: 40%;
@@ -310,6 +310,14 @@ iframe {
   align-items: center;
   height: 20rem;
   position: relative; }
+  .footer__shadow {
+    position: absolute;
+    top: 0;
+    opacity: 30%;
+    width: 100%;
+    height: 0.3rem;
+    background-color: #865151;
+    box-shadow: 1rem 1.2rem 4rem rgba(0, 0, 0, 0.8); }
   .footer__image {
     height: 20rem;
     z-index: -1;
@@ -394,7 +402,8 @@ iframe {
   background: transparent;
   width: 100%;
   height: auto;
-  padding: 3rem; }
+  padding: 3rem;
+  border-style: groove; }
 
 .makers-text {
   text-align: center;
@@ -526,12 +535,10 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 10rem 0;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 93%);
+  background-color: #7bd078;
   background-image: linear-gradient(to right, rgba(187, 231, 178, 0.9), rgba(11, 121, 11, 0.7)); }
-  @media screen and (max-width: 60rem) {
-    .section-laatikko {
-      clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 97%); } }
 
 .ohje-box {
   display: flex;
@@ -540,7 +547,7 @@ iframe {
   padding: 4.5rem;
   margin: auto 0;
   min-height: 25rem;
-  width: 60vw;
+  width: 70vw;
   border-radius: 3px;
   box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.15);
   text-align: center;
@@ -569,7 +576,6 @@ iframe {
       .ohje-box__img {
         width: 25rem; } }
   .ohje-box__text-container {
-    margin-left: 2rem;
     margin-bottom: 3rem;
     width: 100%; }
   .ohje-box__text {
@@ -603,38 +609,6 @@ iframe {
   border-top-style: groove;
   border-color: lightblue; }
 
-.laskuri {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  margin-top: 1rem; }
-
-#vesi {
-  width: 6vw;
-  margin-bottom: 1rem;
-  min-width: 13rem;
-  text-align: center; }
-  @media screen and (max-width: 60rem) {
-    #vesi {
-      width: 10vw; } }
-
-.nappi {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 1.5rem 3.2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.6rem;
-  width: 6vw;
-  min-width: 10rem; }
-  @media screen and (max-width: 60rem) {
-    .nappi {
-      width: 10vw; } }
-
 .dropdown-content {
   background-color: #f1f1f1;
   min-width: 8rem;
@@ -646,24 +620,74 @@ iframe {
   border-color: #8bcf8b;
   background-color: #4CAF50;
   color: white;
-  max-width: 12rem;
-  min-width: 9rem; }
+  min-width: 28%;
+  max-width: 29%;
+  text-align: center;
+  /*@media screen and (max-width: 60rem) {
+    min-width: 20%;
+    max-width: 20%;
+
+  }*/ }
+
+#myDropdown2 {
+  border-style: double;
+  border-color: #8bcf8b;
+  background-color: #4CAF50;
+  color: white;
+  min-width: 28%;
+  max-width: 29%;
+  text-align: center;
+  /*@media screen and (max-width: 60rem) {
+    min-width: 20%;
+    max-width: 20%;
+
+  }*/ }
+
+.nappi {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  max-width: 33%;
+  min-width: 20%;
+  margin-top: 0.5rem;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  /*@media screen and (max-width: 60rem) {
+    min-width: 20%;
+    max-width: 20%;
+  }*/ }
+
+.laskuri {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 2rem 12rem 5rem 12rem; }
+
+.tulos {
+  font-size: 2rem;
+  text-align: left; }
 
 .selectdiv {
-  width: 8vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  float: left;
-  min-width: 8vw;
-  max-width: 8.5rem;
-  margin: 0 41%; }
+  padding-left: 2rem;
+  width: 100vw;
+  margin: 4rem 15%; }
   @media screen and (max-width: 60rem) {
     .selectdiv {
-      width: 8vw;
-      min-width: 8vw;
-      max-width: 8rem;
+      min-width: 100%;
       margin: 1rem 41vw; } }
   .selectdiv :after {
-    content: '<>';
     color: #333;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
