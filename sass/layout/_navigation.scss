@@ -63,7 +63,6 @@
     position: fixed;
     top: 0;
     right: 0;
-    height: 10%;
     width: 100vw;
     background-color: #7bd078;
     display: flex;
@@ -114,16 +113,16 @@
 }
 
 
-.toggle .line1 {
+.burger .line1 {
   transform: rotate(-45deg) translate(-4px, 5px);
   position: fixed;
 }
 
-.toggle .line2 {
+.burger .line2 {
   opacity: 0;
 }
 
-.toggle .line3 {
+.burger .line3 {
   transform: rotate(45deg) translate(-4px, -5px);
   position: fixed;
 }

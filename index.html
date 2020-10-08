@@ -13,13 +13,13 @@
 <header class="header">
     <figure class="header__image"></figure>
     <nav class="nav">
-        <div class="header__logo-container" style="width: fit-content;">
+        <figure class="header__logo-container" style="width: fit-content;">
             <a href="index.html"><img src="img/vaelluslogo.svg" alt="" style="width: 100px; height: 100px"></a>
-        </div>
+        </figure>
         <ul class="buttons">
             <li class="buttons__button btn1"><a href="reitit.html"><button>REITIT</button></a></li>
             <li class="buttons__button btn2"><a href="ohjeet.html"><button>OHJEET</button></a></li>
-            <li class="buttons__button btn3"><a href="kartta.html"><button>REITTIOHJEET</button></a></li>
+            <li class="buttons__button btn3"><a href="kartta.html"><button>KARTTA</button></a></li>
         </ul>
         <div class="hamburger">
             <div class="line1"></div>
@@ -28,39 +28,40 @@
         </div>
     </nav>
     <div class="h1_container">
-        <h1>Suomen suosituimmat vaellussivut</h1>
+        <h1>Vaellusopas</h1>
     </div>
 </header>
 
 <main class="main-home">
-    <video class="video" src="video/video.mp4" autoplay muted loop></video>
+    <img class="bg-image" src="img/metsabg2.jpg">
     <div class="content">
-        <i id="pause" onclick="pause()">PAUSE</i>
         <figure>
             <p class="first-paragraph">Puhtaiden metsien, soiden ja tunturien rinteiden raikkaudessa ajatus vaeltaa vapaana ja mieli virkistyy</p>
             <p class="second-paragraph">Vaellusreittejä on Suomessa lähes rajaton määrä, pakkaa siis rinkkasi ja lähde tutustumaan kotimaan kauniiseen luontoon</p>
             <p class="third-paragraph">Luonnossa liikkumisella on terveyttä edistäviä vaikutuksia, raikkaassa ilmassa retkeily parantaa mieltäsi ja kohottaa kuntoasi</p>
         </figure>
+        <iframe class="video-box" width="853" height="480" src="https://www.youtube.com/embed/uIX8UukEiDk"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </main>
 <section class="makers">
     <p class="makers-text">Tekijät</p>
     <div class="image-box">
         <figure class="image-box__images">
-            <img class="image-box__kuva" src="img/avatar.png" alt="testikuva1">
+            <img class="image-box__kuva" src="img/jaani.jpg" alt="testikuva1">
             <figcaption class="image-box__caption">Jaani Kaukonen</figcaption>
         </figure>
         <figure class="image-box__images">
-            <img class="image-box__kuva" src="img/avatar.png" alt="testikuva2">
+            <img class="image-box__kuva" src="img/jani.jpg" alt="testikuva2">
             <figcaption class="image-box__caption">Jani Peltonen</figcaption>
         </figure>
         <figure class="image-box__images">
-            <img class="image-box__kuva" src="img/avatar.png" alt="testikuva3">
+            <img class="image-box__kuva" src="img/janne.jpg" alt="testikuva3">
             <figcaption class="image-box__caption">Janne Kaukua</figcaption>
         </figure>
     </div>
 </section>
 <footer class="footer">
+    <div class="footer__shadow"></div>
     <figure class="footer__image"></figure>
     <div class="footer__logo-container" style="width: fit-content;">
         <a href="index.html"><img src="img/vaelluslogo.svg" alt="" style="width: 100px; height: 100px"></a>
