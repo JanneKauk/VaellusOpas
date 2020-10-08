@@ -38,9 +38,6 @@ if(document.URL.includes("kartta.html")) {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    L
-
-
     let jsonResult = result();
     async function result(){
         //search = q+keyword;
@@ -62,9 +59,7 @@ if(document.URL.includes("kartta.html")) {
         }).addTo(map).bindPopup(item.Route);
     }
 
-
     let marker;
-
 
     map.on('contextmenu', function(){
         if (marker !== null) {
@@ -72,12 +67,9 @@ if(document.URL.includes("kartta.html")) {
         }
     });
 
-
     map.on('click', mapClicked);
 
     function mapClicked(e) {
-
-
         if (marker != null) {
             removeRoutingControl();
         }
@@ -108,7 +100,7 @@ if (document.URL.includes("ohjeet.html")){
         const nappi = document.querySelector('.nappi');
 
         nappi.addEventListener('click', function() {
-            let paiva = document.querySelector('#vesi').value;
+            //let paiva = document.querySelector('#vesi').value;
 
             const select = document.getElementById("myDropdown");
             for (let i = 0; i < select.options.length; i++) {
@@ -116,49 +108,45 @@ if (document.URL.includes("ohjeet.html")){
                     select.options[i].selected = true;
                 }
             }
-            if (paiva >= 0 && isFinite(paiva) && !isNaN(paiva)) {
+            const luku = document.getElementById("myDropdown2");
+            for (let i = 0; i < select.options.length; i++) {
+                if (luku.options[i].value === 14) {
+                    luku.options[i].selected = true;
+                }
+            }
+            if (luku.value >= 0 && isFinite(luku.value) && !isNaN(luku.value)) {
                 switch (select.value) {
                     case "Talvi":
                         document.querySelector(
-                            '.tulos').innerHTML = "Tarvitset n. " + paiva * 3 +
-                            " litraa vettä ja n. " + (paiva * 1.6).toFixed(2) +
-                            ' kg ruokaa ' + Math.floor(+paiva) +
-                            ":lle päivälle";
+                            '.tulos').innerHTML = "Vettä: " + luku.value * 3 +
+                            " ruokaa: " + (luku.value * 1.6).toFixed(2) +
+                            ' kg  ' + Math.floor(+luku.value).toFixed(2);
+
                         break;
                     case "Kevät":
                         document.querySelector(
-                            '.tulos').innerHTML = "Tarvitset n. " + paiva * 4 +
-                            " litraa vettä ja n. " + (paiva * 1.4).toFixed(2) +
-                            ' kg ruokaa ' + Math.floor(+paiva) +
-                            ":lle päivälle";
+                            '.tulos').innerHTML = "Vettä: " + luku.value * 4 +
+                            " ruokaa: " + (luku.value * 1.4).toFixed(2) +
+                            ' kg ' + Math.floor(+luku.value).toFixed(2);
                         break;
                     case "Kesä":
                         document.querySelector(
-                            '.tulos').innerHTML = "Tarvitset n. " + paiva * 5 +
-                            " litraa vettä ja n. " + (paiva * 1.3).toFixed(2) +
-                            ' kg ruokaa ' + Math.floor(+paiva) +
-                            ":lle päivälle";
+                            '.tulos').innerHTML = "Vettä: " + luku.value * 5 +
+                            " ruokaa: " + (luku.value * 1.3).toFixed(2) +
+                            ' kg ' + Math.floor(+luku.value).toFixed(2);
                         break;
                     case "Syksy":
                         document.querySelector(
-                            '.tulos').innerHTML = "Tarvitset n. " + paiva * 4 +
-                            " litraa vettä ja n. " + (paiva * 1.5).toFixed(2) +
-                            ' kg ruokaa ' + Math.floor(+paiva) +
-                            ":lle päivälle";
+                            '.tulos').innerHTML = "Vettä: " + luku.value * 4 +
+                            " ruokaa: " + (luku.value * 1.5).toFixed(2) +
+                            ' kg' + Math.floor(+luku.value).toFixed(2);
+                        break;
                 }
             } else {
                 document.querySelector(
-                    '.tulos').innerHTML = "Ei ole positiivinen luku tai luku ollenkaan";
+                    '.tulos').innerHTML = "Syötä reittisi kesto";
             }
         })
-        const vesi = document.querySelector('#vesi');
-        vesi.addEventListener("keyup", function(event) {
-            const keyName = event.key;
-            if (keyName === 'Enter') {
-                document.querySelector(".nappi").click();
-
-            }
-        });
     }
 
 

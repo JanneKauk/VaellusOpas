@@ -5,9 +5,9 @@
   align-items: center;
   //background-color: white;
   padding: 10rem 0;
-  margin-bottom: 3rem;
-  clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 93%);
-  //background-color: #7bd078;
+  margin-bottom: 4rem;
+  clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 100%);
+  background-color: #7bd078;
   background-image: linear-gradient(
                   to right,
                   rgba(187, 231, 178, 0.9),
@@ -16,7 +16,7 @@
 
   @media screen and (max-width: 60rem) {
     //height: 90vh;
-    clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 97%);
+    //clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 97%);
   }
 
 }
@@ -120,51 +120,6 @@
   border-color: lightblue;
 }
 
-.laskuri {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-#vesi {
-  width: 6vw;
-  margin-bottom: 1rem;
-  min-width: 13rem;
-  text-align: center;
-
-  @media screen and (max-width: 60rem) {
-    width: 10vw;
-  }
-}
-.nappi {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 1.5rem 3.2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.6rem;
-  width: 6vw;
-  min-width: 10rem;
-  @media screen and (max-width: 60rem) {
-    width: 10vw;
-  }
-}
-
-.tulos {
-
-
-}
-
-
-
-
-
 
 
 .dropdown-content {
@@ -183,31 +138,94 @@
   border-color: #8bcf8b;
   background-color: #4CAF50;
   color: white;
-  max-width: 12rem;
-  min-width: 9rem;
+  width: 20%;
+  margin-right: 2%;
+  @media screen and (max-width: 60rem) {
+    min-width: 30%;
+    max-width: 30%;
+
+  }
+
+
+}
+#myDropdown2 {
+  border-style: double;
+  border-color: #8bcf8b;
+  background-color: #4CAF50;
+  color: white;
+  width: 20%;
+  margin-right: 10%;
+  @media screen and (max-width: 60rem) {
+    min-width: 30%;
+    max-width: 30%;
+
+  }
 
 
 }
 
+.nappi {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 1.5rem 3rem;
+  margin: 0.5rem;
+  margin-left: -2%;
+  margin-right: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  max-width: 33%;
+  min-width: 20%;
+
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0,0,0,0.2);
+  @media screen and (max-width: 60rem) {
+    min-width: 20%;
+    max-width: 20%;
+    font-size: 1rem;
+  }
+}
+.laskuri {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-style: groove;
+}
+
+
+
+.tulos {
+  font-size: 2rem;
+}
+
 .selectdiv {
-  width: 8vw;
+  //width: 8vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   position: relative;
   float: left;
-  min-width: 8vw;
-  max-width: 8.5rem;
-  margin: 0 41%;
+  //min-width: 7vw;
+  width: 100vw;
+  margin: 1rem 15%;
+
 
 
 
   @media screen and (max-width: 60rem) {
-    width: 8vw;
-    min-width: 8vw;
-    max-width: 8rem;
+    //width: 9vw;
+    min-width: 100%;
     margin: 1rem 41vw;
   }
 
   :after {
-    content: '<>';
+    //content: '<>';
     color: #333;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);

@@ -8,8 +8,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/leaflet-routing-machine.css">
 
 </head>
 
@@ -40,7 +38,6 @@
 <main>
     <section class="section-laatikko">
         <div class="ohje-box">
-
             <div class="ohje-box__imgtext">
             <article class="ohje-box__text-container">
                 <div class="divider"></div>
@@ -64,42 +61,50 @@
                 <h3 class="ohje-box__heading">Varusteet</h3>
 
                 <p class="ohje-box__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Minkälaiset varusteet kannattaa ottaa mukaan. Vesirakko, trangia, tulentekovälineet, paljon vettä, kuivattua tai säilyke ruokaa, makuupussi, makuupatja,
+                    vedenpitävät kengät tai kumisaappaat, helposti kuivuvat vaatteet, rakkolaastareita, desinfiointiainetta, tarvittavat lääkkeet ja vähän yli. Alla olevalla
+                    laskurilla voit laskea arvion ruuan ja veden kulutuksesta.
                 </p>
-                <p>Valitse vuodenaika</p>
+                <section class="laskuri">
                 <div class="selectdiv">
                     <label for="myDropdown"></label>
                     <select id="myDropdown" class="dropdown-content">
+                        <option value="#">Vuodenaika</option>
                         <option value="Kesä">Kesä</option>
                         <option value="Syksy">Syksy</option>
                         <option value="Talvi">Talvi</option>
                         <option value="Kevät">Kevät</option>
                     </select>
-                </div>
-                <p>Laskuri veden määrälle<br />Kuinka monen päivän retki?</p>
-                <div class="laskuri">
-                    <label for="vesi"></label><input id="vesi" onfocus="this.value=''">
+                    <label for="myDropdown2"></label>
+                    <select id="myDropdown2" class="dropdown-content">
+                        <option value="#">Kesto</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                    </select>
                     <button class="nappi">Laske</button>
                 </div>
                 <p class="tulos">tulos</p>
+                </section>
             </article>
             </div>
         </div>
     </section>
 </main>
-<aside class="map-box">
-    <h1>Vasemmalla hiiren klikkauksella reitti omasta sijainnista. Oikealla hiiren klikkauksella voi poistaa markerin</h1>
-    <article class="map-box__content">
-        <figure class="map-container">
-            <div id="map" ></div>
-        </figure>
-    </article>
-</aside>
 
 <footer class="footer">
+    <div class="footer__shadow"></div>
     <figure class="footer__image"></figure>
     <div class="footer__logo-container" style="width: fit-content;">
         <a href="index.html"><img src="img/vaelluslogo.svg" alt="" style="width: 100px; height: 100px"></a>
@@ -107,14 +112,12 @@
     <ul class="footer-nav">
         <li class="footer-nav btn1"><a href="reitit.html"><button>REITIT</button></a></li>
         <li class="footer-nav btn2"><a href="ohjeet.html"><button>OHJEET</button></a></li>
-        <li class="footer-nav btn3"><a href="#"><button>VARUSTEET</button></a></li>
+        <li class="footer-nav btn3"><a href="kartta.html"><button>REITTIOHJEET</button></a></li>
     </ul>
     <div class="copyright">
         <p>&copy; 2020 Team Cyber. All Rights Reserved.</p>
     </div>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
-<script src="javascript/leaflet-routing-machine.js"></script>
 <script src="javascript/vaellusopas.js"></script>
 </body>
 
