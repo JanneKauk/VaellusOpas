@@ -698,3 +698,14 @@ select::-ms-expand {
   @media screen and (max-width: 60rem) {
     .selectdiv select {
       padding: 0 1rem; } }
+
+.section-laatikko-kartta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  margin-bottom: 6rem;
+  clip-path: polygon(0 0, 100% 8.85%, 100% 100%, 0% 92.15%);
+  background-color: #7bd078;
+  background-image: linear-gradient(to right, rgba(187, 231, 178, 0.9), rgba(11, 121, 11, 0.7)); }

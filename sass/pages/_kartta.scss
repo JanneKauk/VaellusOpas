@@ -1,0 +1,21 @@
+.section-laatikko-kartta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  //background-color: white;
+  padding: 10rem 0;
+  margin-bottom: 6rem;
+  clip-path: polygon(0 0, 100% 8.85%, 100% 100%, 0% 92.15%);
+  background-color: #7bd078;
+  background-image: linear-gradient(
+                  to right,
+                  rgba(187, 231, 178, 0.9),
+                  rgba(#0b790b, 0.7));
+
+
+  @media screen and (max-width: 60rem) {
+    //height: 90vh;
+    //clip-path: polygon(0 0, 100% 7vh, 100% 100%, 0% 97%);
+  }
+}
