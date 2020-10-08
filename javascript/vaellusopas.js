@@ -190,7 +190,7 @@ const navOpen = () => {
             }
         });
         //Burger animation
-        burger.classList.toggle('toggle');
+        burger.classList.toggle('burger');
     });
 };
 
